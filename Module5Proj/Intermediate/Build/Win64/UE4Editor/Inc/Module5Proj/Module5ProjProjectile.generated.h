@@ -10,25 +10,24 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPrimitiveComponent;
 class AActor;
-struct FVector;
 struct FHitResult;
 #ifdef MODULE5PROJ_Module5ProjProjectile_generated_h
 #error "Module5ProjProjectile.generated.h already included, missing '#pragma once' in Module5ProjProjectile.h"
 #endif
 #define MODULE5PROJ_Module5ProjProjectile_generated_h
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_SPARSE_DATA
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_RPC_WRAPPERS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_SPARSE_DATA
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnHit);
+	DECLARE_FUNCTION(execOnOverLapBegin);
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnHit);
+	DECLARE_FUNCTION(execOnOverLapBegin);
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_INCLASS_NO_PURE_DECLS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAModule5ProjProjectile(); \
 	friend struct Z_Construct_UClass_AModule5ProjProjectile_Statics; \
@@ -39,7 +38,7 @@ public: \
 
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_INCLASS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAModule5ProjProjectile(); \
 	friend struct Z_Construct_UClass_AModule5ProjProjectile_Statics; \
@@ -50,7 +49,7 @@ public: \
 
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_STANDARD_CONSTRUCTORS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AModule5ProjProjectile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AModule5ProjProjectile) \
@@ -63,7 +62,7 @@ private: \
 public:
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_ENHANCED_CONSTRUCTORS \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AModule5ProjProjectile(AModule5ProjProjectile&&); \
@@ -74,32 +73,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AModule5ProjProjectile); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AModule5ProjProjectile)
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CollisionComp() { return STRUCT_OFFSET(AModule5ProjProjectile, CollisionComp); } \
 	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(AModule5ProjProjectile, ProjectileMovement); }
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_12_PROLOG
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_GENERATED_BODY_LEGACY \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_13_PROLOG
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_SPARSE_DATA \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_RPC_WRAPPERS \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_INCLASS \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_STANDARD_CONSTRUCTORS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_PRIVATE_PROPERTY_OFFSET \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_SPARSE_DATA \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_RPC_WRAPPERS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_INCLASS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_GENERATED_BODY \
+#define Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_PRIVATE_PROPERTY_OFFSET \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_SPARSE_DATA \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_INCLASS_NO_PURE_DECLS \
-	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_15_ENHANCED_CONSTRUCTORS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_PRIVATE_PROPERTY_OFFSET \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_SPARSE_DATA \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_INCLASS_NO_PURE_DECLS \
+	Module5Proj_Source_Module5Proj_Module5ProjProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Module5Proj.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{90AACFFF-3253-4FCB-95F9-1072847758E7}</UniqueIdentifier>
+      <UniqueIdentifier>{5A10EA6B-C3E3-4B4A-88DE-92694717369A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Module5Proj.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{4E9A335D-442E-4728-9497-6B08A4E60519}</UniqueIdentifier>
+      <UniqueIdentifier>{946B1FE2-6067-4838-85B8-DBCF924BB1E8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,11 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Module5Proj">
-      <UniqueIdentifier>{9B16A9E5-709E-4CFE-815D-6003EC61DEF9}</UniqueIdentifier>
+      <UniqueIdentifier>{4F7FC583-50E8-4A18-ADC1-50FFCEF4C44F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Module5Proj\Blackboard_Keys.h">
+      <Filter>Source\Module5Proj</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Module5Proj\Module5Proj.Build.cs">
       <Filter>Source\Module5Proj</Filter>
     </None>
@@ -65,8 +68,32 @@
     <ClInclude Include="..\..\Source\Module5Proj\Module5ProjProjectile.h">
       <Filter>Source\Module5Proj</Filter>
     </ClInclude>
+    <Filter Include="Source\Module5Proj\AI">
+      <UniqueIdentifier>{4BC1AC8E-9476-478E-9677-DFF1446244D3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Module5Proj\AI\AI_Character.cpp">
+      <Filter>Source\Module5Proj\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\AI\AI_Character.h">
+      <Filter>Source\Module5Proj\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\AI\AI_Controller.cpp">
+      <Filter>Source\Module5Proj\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\AI\AI_Controller.h">
+      <Filter>Source\Module5Proj\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\Module5Proj\AI\Tasks">
+      <UniqueIdentifier>{BDBC0B0D-2475-42E9-BFDF-370298B0F39F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Module5Proj\AI\Tasks\Shoot_Task.cpp">
+      <Filter>Source\Module5Proj\AI\Tasks</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\AI\Tasks\Shoot_Task.h">
+      <Filter>Source\Module5Proj\AI\Tasks</Filter>
+    </ClInclude>
     <Filter Include="Source\Module5Proj\Player">
-      <UniqueIdentifier>{F9EB7BFF-AA14-4DBE-B5D3-0EB3B0EC2824}</UniqueIdentifier>
+      <UniqueIdentifier>{4A77D7A8-4837-4183-8276-E57F5BC86A68}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\PlayerCharacter.cpp">
       <Filter>Source\Module5Proj\Player</Filter>
@@ -75,7 +102,7 @@
       <Filter>Source\Module5Proj\Player</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Abilities">
-      <UniqueIdentifier>{4487ED59-D177-41F3-97EC-BF69BEC7EC9E}</UniqueIdentifier>
+      <UniqueIdentifier>{C8DF89DD-1B69-418D-B304-7F1B390016CE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Abilities\Ability_PositionSwap.cpp">
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
@@ -90,7 +117,7 @@
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Components">
-      <UniqueIdentifier>{73CBBCB2-D611-4003-A452-C09E395B0068}</UniqueIdentifier>
+      <UniqueIdentifier>{2F48EC62-CE3C-48D2-8A4B-25474250D168}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Components\AbilityComponent.cpp">
       <Filter>Source\Module5Proj\Player\Components</Filter>
@@ -111,7 +138,7 @@
       <Filter>Source\Module5Proj\Player\Components</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Notifies">
-      <UniqueIdentifier>{EC8DB3A7-B714-468A-B292-C6CCDBEFE1B7}</UniqueIdentifier>
+      <UniqueIdentifier>{F6B636AE-AAEA-4710-B631-84DC9485ED54}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\ActivateMeleeDamage.cpp">
       <Filter>Source\Module5Proj\Player\Notifies</Filter>
