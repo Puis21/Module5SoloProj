@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Module5Proj.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B7BCA6F8-CEE1-4375-9D68-5C32CA0400DD}</UniqueIdentifier>
+      <UniqueIdentifier>{90AACFFF-3253-4FCB-95F9-1072847758E7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Module5Proj.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0E4A4646-B357-436E-8355-4858B8F949FE}</UniqueIdentifier>
+      <UniqueIdentifier>{4E9A335D-442E-4728-9497-6B08A4E60519}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Module5Proj">
-      <UniqueIdentifier>{62550E3E-D9ED-417F-84F3-D25B1B428929}</UniqueIdentifier>
+      <UniqueIdentifier>{9B16A9E5-709E-4CFE-815D-6003EC61DEF9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Module5Proj\Module5Proj.Build.cs">
       <Filter>Source\Module5Proj</Filter>
@@ -66,7 +66,7 @@
       <Filter>Source\Module5Proj</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player">
-      <UniqueIdentifier>{EA302AF4-2D7A-46F7-ABAF-5B9AD937F4F0}</UniqueIdentifier>
+      <UniqueIdentifier>{F9EB7BFF-AA14-4DBE-B5D3-0EB3B0EC2824}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\PlayerCharacter.cpp">
       <Filter>Source\Module5Proj\Player</Filter>
@@ -74,14 +74,62 @@
     <ClInclude Include="..\..\Source\Module5Proj\Player\PlayerCharacter.h">
       <Filter>Source\Module5Proj\Player</Filter>
     </ClInclude>
-    <Filter Include="Source\Module5Proj\Player\Components">
-      <UniqueIdentifier>{16D0EAF9-14AA-4488-ABF9-58F357B4EF84}</UniqueIdentifier>
+    <Filter Include="Source\Module5Proj\Player\Abilities">
+      <UniqueIdentifier>{4487ED59-D177-41F3-97EC-BF69BEC7EC9E}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Abilities\Ability_PositionSwap.cpp">
+      <Filter>Source\Module5Proj\Player\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Abilities\Ability_PositionSwap.h">
+      <Filter>Source\Module5Proj\Player\Abilities</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Abilities\Ability_Shield.cpp">
+      <Filter>Source\Module5Proj\Player\Abilities</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Abilities\Ability_Shield.h">
+      <Filter>Source\Module5Proj\Player\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\Module5Proj\Player\Components">
+      <UniqueIdentifier>{73CBBCB2-D611-4003-A452-C09E395B0068}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Components\AbilityComponent.cpp">
+      <Filter>Source\Module5Proj\Player\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Components\AbilityComponent.h">
+      <Filter>Source\Module5Proj\Player\Components</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Components\MeleeComponent.cpp">
+      <Filter>Source\Module5Proj\Player\Components</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Components\MeleeComponent.h">
+      <Filter>Source\Module5Proj\Player\Components</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Components\PlayerMovementComponent.cpp">
       <Filter>Source\Module5Proj\Player\Components</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Module5Proj\Player\Components\PlayerMovementComponent.h">
       <Filter>Source\Module5Proj\Player\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\Module5Proj\Player\Notifies">
+      <UniqueIdentifier>{EC8DB3A7-B714-468A-B292-C6CCDBEFE1B7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\ActivateMeleeDamage.cpp">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Notifies\ActivateMeleeDamage.h">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\DeactivateMeleeDamage.cpp">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Notifies\DeactivateMeleeDamage.h">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\MyAnimNotify.cpp">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Notifies\MyAnimNotify.h">
+      <Filter>Source\Module5Proj\Player\Notifies</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

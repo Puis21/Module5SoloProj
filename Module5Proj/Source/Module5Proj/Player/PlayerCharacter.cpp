@@ -17,11 +17,10 @@
 #include "DrawDebugHelpers.h"
 //#include "Module5Proj/AI/AI_Character.h"
 #include "Camera/CameraComponent.h"
-//#include "Module5Proj/Player/Components/Camera/PlayerCameraComponent.h"
-//#include "Module5Proj/Player/Components/AbilityComponent.h"
-//#include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
-//#include "Module5Proj/Player/Abilities/Ability_Shield.h"
-//#include "Module5Proj/Player/Components/MeleeComponent.h"
+#include "Module5Proj/Player/Components/AbilityComponent.h"
+#include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
+#include "Module5Proj/Player/Abilities/Ability_Shield.h"
+#include "Module5Proj/Player/Components/MeleeComponent.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -66,13 +65,13 @@ APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
 
 	//CombatCollision->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
 
-	//m_ACAbilityComponent = CreateDefaultSubobject<UAbilityComponent>(TEXT("AbilityComponent"));
+	m_ACAbilityComponent = CreateDefaultSubobject<UAbilityComponent>(TEXT("AbilityComponent"));
 
-	//m_ACAbilitySwapPos = CreateDefaultSubobject<UAbility_PositionSwap>(TEXT("Ability_SwapPos"));
+	m_ACAbilitySwapPos = CreateDefaultSubobject<UAbility_PositionSwap>(TEXT("Ability_SwapPos"));
 
-	//m_ACAbilityShield = CreateDefaultSubobject<UAbility_Shield>(TEXT("Ability_Shield"));
+	m_ACAbilityShield = CreateDefaultSubobject<UAbility_Shield>(TEXT("Ability_Shield"));
 
-	//m_ACMeleeComponent = CreateDefaultSubobject<UMeleeComponent>(TEXT("Melee Component"));
+	m_ACMeleeComponent = CreateDefaultSubobject<UMeleeComponent>(TEXT("Melee Component"));
 
 	m_bPressedSprint = false;
 	bPressedCrouch = false;
@@ -378,24 +377,24 @@ void APlayerCharacter::OnAbility1()
 void APlayerCharacter::OnAbility2Used()
 {
 
-	//if (!m_ACAbilitySwapPos->GetAbilityActive())
+	if (!m_ACAbilitySwapPos->GetAbilityActive())
 	{
-		//m_ACAbilitySwapPos->AbilityActivated();
+		m_ACAbilitySwapPos->AbilityActivated();
 	}
-	//else
+	else
 	{
-		//FirstPersonCameraComponent->PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
-		//m_ACAbilitySwapPos->AbilityUsed();
+		FirstPersonCameraComponent->PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
+		m_ACAbilitySwapPos->AbilityUsed();
 	}
 
 }
 
 void APlayerCharacter::OnAbilityCancel()
 {
-	//if (m_ACAbilitySwapPos->GetAbilityActive())
+	if (m_ACAbilitySwapPos->GetAbilityActive())
 	{
 		FirstPersonCameraComponent->PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
-		//m_ACAbilitySwapPos->AbilityCancelled();
+		m_ACAbilitySwapPos->AbilityCancelled();
 	}
 }
 

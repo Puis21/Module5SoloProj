@@ -14,10 +14,10 @@ class UMotionControllerComponent;
 class UAnimMontage;
 class USoundBase;
 class UPlayerMovementComponent;
-//class UMeleeComponent;
-//class UAbilityComponent;
-//class UAbility_PositionSwap;
-//class UAbility_Shield;
+class UMeleeComponent;
+class UAbilityComponent;
+class UAbility_PositionSwap;
+class UAbility_Shield;
 
 UCLASS(config = Game)
 class APlayerCharacter : public ACharacter
@@ -31,9 +31,6 @@ class APlayerCharacter : public ACharacter
 	///** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		UCameraComponent* FirstPersonCameraComponent;
-
-	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	//UPlayerCameraComponent* FirstPersonCameraComponent;
 
 protected:
 
@@ -147,7 +144,7 @@ private:
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), DisplayName = "First Person Character Movement Component")
 		UPlayerMovementComponent* m_ACPlayerMovementComponent;
 
-	/*UPROPERTY()
+	UPROPERTY()
 		UAbilityComponent* m_ACAbilityComponent;
 
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), DisplayName = "Ability Swap Position")
@@ -157,7 +154,7 @@ private:
 		UAbility_Shield* m_ACAbilityShield;
 
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), DisplayName = "Melee Component")
-		UMeleeComponent* m_ACMeleeComponent;*/
+		UMeleeComponent* m_ACMeleeComponent;
 
 	//class UAIPerceptionStimuliSourceComponent* stimulus;
 
