@@ -7,6 +7,8 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\Module5ProjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\PlayerMovementComponent.cpp.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\PlayerCharacter.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5Proj.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5ProjCharacter.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5ProjGameMode.cpp.obj"
@@ -17,6 +19,8 @@
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5ProjGameMode.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5ProjHUD.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Module5ProjProjectile.gen.cpp.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\PlayerCharacter.gen.cpp.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\PlayerMovementComponent.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Default.rc2.res"
 /OUT:"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj.lib"
 /INCLUDE:IMPLEMENT_MODULE_Module5Proj
