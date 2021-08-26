@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Module5Proj",
+			"Path": "C:\\Users\\Puia\\Documents\\GitHub\\Module5SoloProj\\Module5Proj\\Source\\Module5Proj.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Module5ProjEditor",
+			"Path": "C:\\Users\\Puia\\Documents\\GitHub\\Module5SoloProj\\Module5Proj\\Source\\Module5ProjEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
