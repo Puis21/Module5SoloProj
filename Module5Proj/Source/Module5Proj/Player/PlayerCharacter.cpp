@@ -15,7 +15,7 @@
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISense_Sight.h"
 #include "DrawDebugHelpers.h"
-//#include "Module5Proj/AI/AI_Character.h"
+#include "Module5Proj/AI/AI_Character.h"
 #include "Camera/CameraComponent.h"
 #include "Module5Proj/Player/Components/AbilityComponent.h"
 #include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
@@ -178,13 +178,13 @@ void APlayerCharacter::OnOverLapBegin(UPrimitiveComponent* OverlappedComponent, 
 {
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr))
 	{
-		//AAI_Character* Enemy = Cast<AAI_Character>(OtherActor);
-		//if (Enemy)
+		AAI_Character* Enemy = Cast<AAI_Character>(OtherActor);
+		if (Enemy)
 		{
-			//if (Enemy->m_psBloodEffect && HitSound)
+			if (Enemy->m_psBloodEffect && HitSound)
 			{
-				//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
-				//UGameplayStatics::PlaySoundAtLocation(this, HitSound, Enemy->GetActorLocation());
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
+				UGameplayStatics::PlaySoundAtLocation(this, HitSound, Enemy->GetActorLocation());
 			}
 		}
 	}
@@ -252,7 +252,7 @@ void APlayerCharacter::Dash()
 {
 	if (m_bCanDash)
 	{
-		//GetCharacterMovement()->BrakingFriction = 0.f;
+		GetCharacterMovement()->BrakingFriction = 0.f;
 		const FVector ForwardDir = this->GetActorRotation().Vector();
 		LaunchCharacter(ForwardDir * m_fDashDistance, true, true);
 
@@ -400,15 +400,15 @@ void APlayerCharacter::OnAbilityCancel()
 
 void APlayerCharacter::OnAbility3Used()
 {
-	//if (m_ACAbilityShield)
+	if (m_ACAbilityShield)
 	{
-		//m_ACAbilityShield->AbilityUsed();
+		m_ACAbilityShield->AbilityUsed();
 	}
 }
 
 void APlayerCharacter::Die()
 {
-	//if (!m_ACAbilityShield->GetShieldActive())
+	if (!m_ACAbilityShield->GetShieldActive())
 	{
 		UE_LOG(LogTemp, Warning, TEXT("DED"));
 	}
