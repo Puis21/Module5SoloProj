@@ -383,7 +383,6 @@ void APlayerCharacter::OnAbility2Used()
 	}
 	else
 	{
-		FirstPersonCameraComponent->PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
 		m_ACAbilitySwapPos->AbilityUsed();
 	}
 

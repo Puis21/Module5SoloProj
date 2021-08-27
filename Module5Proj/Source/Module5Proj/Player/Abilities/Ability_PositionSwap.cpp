@@ -3,7 +3,7 @@
 
 #include "Ability_PositionSwap.h"
 #include "Kismet/GameplayStatics.h"
-//#include "Module5Proj/AI/AI_Character.h"
+#include "Module5Proj/AI/AI_Character.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "DrawDebugHelpers.h"
@@ -71,12 +71,11 @@ void UAbility_PositionSwap::AbilityUsed()
 
         bool bHit = GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, TraceParams);
 
-       // if (AAI_Character* HitMarkerCast = Cast<AAI_Character>(Hit.GetActor()))
+       if (AAI_Character* HitMarkerCast = Cast<AAI_Character>(Hit.GetActor()))
         {
-            //FVector EnemyPos = HitMarkerCast->GetActorLocation();
-
-          //  HitMarkerCast->SetActorLocation(PlayerLoc);
-          //  m_ACPlayerCharacter->TeleportTo(EnemyPos, FRotator::ZeroRotator, false, false);
+            FVector EnemyPos = HitMarkerCast->GetActorLocation();
+            HitMarkerCast->SetActorLocation(PlayerLoc);
+            m_ACPlayerCharacter->TeleportTo(EnemyPos, FRotator::ZeroRotator, false, false);
             m_ACPlayerCharacter->AddControllerYawInput(m_ACPlayerCharacter->GetActorRotation().Yaw + 360.f);
             AbilityCancelled();
         }
