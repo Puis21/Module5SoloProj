@@ -1246,3 +1246,71 @@ Script Stack (0 frames):
 [2021.08.26-21.05.57:494][163]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
 [2021.08.26-21.05.57:587][163]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0082 seconds. Added 3617 classes and 867 folders.
 [2021.08.26-21.05.57:587][163]Display: HotReload took  3.5s.
+[2021.08.26-21.06.23:112][239]LogUObjectHash: Compacting FUObjectHashTables data took   5.16ms
+[2021.08.26-21.06.23:113][239]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.132
+[2021.08.26-21.06.23:114][239]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Player/Sword_Kill] ([1] browsable assets)...
+[2021.08.26-21.06.23:117][239]OBJ SavePackage:     Rendered thumbnail for [SoundWave /Game/Player/Sword_Kill.Sword_Kill]
+[2021.08.26-21.06.23:117][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/Player/Sword_Kill]
+[2021.08.26-21.06.23:118][239]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Sword_Kill_Auto1D16B41034A9C6260017C29B900E88092.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Autosaves/Game/Player/Sword_Kill_Auto1.uasset'
+[2021.08.26-21.06.23:119][239]LogFileHelpers: Auto-saving content packages took 0.006
+[2021.08.26-21.06.51:516][347]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (BigWall2)
+[2021.08.26-21.06.52:130][406]LogTemp: Repeating last play command: Selected Viewport
+[2021.08.26-21.06.52:136][406]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.08.26-21.06.52:136][406]PIE: New page: PIE session: FirstPersonExampleMap (Aug 26, 2021, 7:06:52 AM)
+[2021.08.26-21.06.52:171][406]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.08.26-21.06.52:180][406]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008977s)
+[2021.08.26-21.06.52:181][406]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.08.26-21.06.52:181][406]LogPlayLevel: PIE: World Init took: (0.000785s)
+[2021.08.26-21.06.52:181][406]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.009951s)
+[2021.08.26-21.06.52:240][406]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2021.08.26-21.06.52:241][406]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.08.26-21.06.52:241][406]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.08.26-21.06.52:241][406]LogAudio: Display: Using built-in audio occlusion.
+[2021.08.26-21.06.52:241][406]LogAudioMixer: Display: Initializing audio mixer.
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 0: FrontLeft
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 1: FrontRight
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 2: FrontCenter
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 3: LowFrequency
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 4: BackLeft
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 5: BackRight
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 6: SideLeft
+[2021.08.26-21.06.52:245][406]LogAudioMixer: Display: 7: SideRight
+[2021.08.26-21.06.52:262][406]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.08.26-21.06.52:262][406]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.08.26-21.06.52:262][406]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.08.26-21.06.52:262][406]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.08.26-21.06.52:263][406]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.08.26-21.06.52:263][406]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.08.26-21.06.52:263][406]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.08.26-21.06.52:276][406]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.08.26-21.06.52:276][406]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.08.26-21.06.52:276][406]LogInit: FAudioDevice initialized.
+[2021.08.26-21.06.52:276][406]LogAudio: Display: Audio Device (ID: 3) registered with world 'FirstPersonExampleMap'.
+[2021.08.26-21.06.52:290][406]LogLoad: Game class is 'Module5ProjGameMode'
+[2021.08.26-21.06.52:291][406]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.08.26-14.06.52
+[2021.08.26-21.06.52:292][406]LogWorld: Bringing up level for play took: 0.001521
+[2021.08.26-21.06.52:292][406]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.08.26-21.06.52:294][406]PIE: Server logged in
+[2021.08.26-21.06.52:294][406]PIE: Play in editor total start time 0.16 seconds.
+[2021.08.26-21.07.01:894][509]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.08.26-21.07.01:894][509]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.08.26-21.07.01:894][509]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.08.26-21.07.01:894][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.26-21.07.01:903][509]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.08.26-21.07.01:916][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.08.26-21.07.01:933][509]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.08.26-21.07.01:933][509]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.08.26-21.07.01:934][509]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.08.26-21.07.01:950][509]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.08.26-21.07.01:953][509]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2021.08.26-21.07.01:989][510]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.08.26-21.09.59:076][ 95]LogDirectoryWatcher: Display: A directory notification failed for 'C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Collections/' because it could not be accessed. Aborting watch request...
+[2021.08.26-21.09.59:076][ 95]LogDirectoryWatcher: Display: A directory notification failed for 'C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Developers/Puia/Collections/' because it could not be accessed. Aborting watch request...
+[2021.08.26-21.09.59:076][ 95]LogDirectoryWatcher: Display: A directory notification failed for 'C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Collections/' because it could not be accessed. Aborting watch request...
