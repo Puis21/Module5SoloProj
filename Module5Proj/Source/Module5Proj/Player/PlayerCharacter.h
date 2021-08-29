@@ -10,6 +10,7 @@ class UInputComponent;
 class USkeletalMeshComponent;
 class USceneComponent;
 class UCameraComponent;
+class UPlayerCameraComponent;
 class UMotionControllerComponent;
 class UAnimMontage;
 class USoundBase;
@@ -38,7 +39,7 @@ public:
 
 	///** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-		UCameraComponent* FirstPersonCameraComponent;
+		UPlayerCameraComponent* FirstPersonCameraComponent;
 
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
@@ -129,13 +130,17 @@ public:
 	/** Returns Mesh1P subobject **/
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/
-	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+	UPlayerCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
 	UPlayerMovementComponent* GetPlayerMovementComponent() const { return m_ACPlayerMovementComponent; }
 
 	void DoubleJump();
 
 	void Dash();
+
+	void DashStop();
+
+	void DashReset();
 
 	void Die();
 
@@ -156,6 +161,9 @@ private:
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), DisplayName = "Melee Component")
 		UMeleeComponent* m_ACMeleeComponent;
 
+	UPROPERTY()
+	FTimerHandle DashTimerHandle;
+
 	//class UAIPerceptionStimuliSourceComponent* stimulus;
 
 	void setUpStimulus();
@@ -173,6 +181,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		float m_fDashCooldown;
+
+	UPROPERTY(EditAnywhere)
+		float m_fDashStop;
 
 	UPROPERTY()
 		bool m_bCanDash;

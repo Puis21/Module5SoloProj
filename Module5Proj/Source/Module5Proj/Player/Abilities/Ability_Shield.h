@@ -17,6 +17,8 @@ public:
 
 	virtual void BeginPlay() override;
 
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
 	UAbility_Shield();
 
 	void AbilityUsed();
@@ -34,10 +36,10 @@ protected:
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Shield)
-		UParticleSystem* m_pShieldParticleSystem;
+	class UParticleSystem* m_pShieldParticleSystem;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Shield)
-	//UParticleSystemComponent* m_pShieldParticleComponent;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Shield)
+	class UParticleSystemComponent* m_pShieldParticleComponent;
 
 	UPROPERTY(BlueprintReadOnly)
 		FTimerHandle TimerAbilityActive;

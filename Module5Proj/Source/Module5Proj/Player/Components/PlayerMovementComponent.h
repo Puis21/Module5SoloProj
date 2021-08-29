@@ -8,7 +8,7 @@
 #include "PlayerMovementComponent.generated.h"
 
 class APlayerCharacter;
-//class UPlayerCameraComponent;
+class UPlayerCameraComponent;
 class UCameraComponent;
 
 UENUM(BlueprintType)
@@ -64,7 +64,7 @@ public:
 
 	bool CheckCapsuleCollision(FVector Center, float HalfHeight, float Radius, bool DrawDebug)const;
 
-	void TEST();
+	EMovementState GetMovementState() const;
 
 protected:
 	// Called when the game starts
@@ -96,7 +96,7 @@ public:
 	float SetSpeed() const;
 
 	APlayerCharacter* m_pPlayerCharacter;
-	UCameraComponent* m_pCameraComponent;
+	UPlayerCameraComponent* m_pCameraComponent;
 
 private:
 

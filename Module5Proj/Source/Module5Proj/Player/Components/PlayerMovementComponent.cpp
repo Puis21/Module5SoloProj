@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include <Components/CapsuleComponent.h>
 #include "Kismet/GameplayStatics.h"
+#include "Module5Proj/Player/Camera/PlayerCameraComponent.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include <DrawDebugHelpers.h>
 #include "Engine/Engine.h"
@@ -40,7 +41,7 @@ void UPlayerMovementComponent::BeginPlay()
 	// Set Standing Capsule Half Height
 	m_fStandingCapsuleHalfHeight = m_pPlayerCharacter->GetCapsuleComponent()->GetScaledCapsuleHalfHeight();
 	// Set Relative Z Offset on Camera
-	m_fStandingCameraZOffSet = m_pPlayerCharacter->GetFirstPersonCameraComponent()->GetRelativeLocation().Z;
+	m_fStandingCameraZOffSet = m_pCameraComponent->GetRelativeLocation().Z;
 
 	if (m_pCapsuleHalfHeightCurve)
 	{
@@ -96,12 +97,14 @@ void UPlayerMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 void UPlayerMovementComponent::StartSprinting()
 {
 	StartMovementStateSwitch(EMovementState::Sprinting);
+	m_pCameraComponent->UpdateFOV(EMovementState::Sprinting);
 }
 
 void UPlayerMovementComponent::StopSprinting()
 {
 	bisSprinting = false;
 	StartMovementStateSwitch(EMovementState::Walking);
+	m_pCameraComponent->UpdateFOV(EMovementState::Walking);
 	ResolveMovement();
 	MaxWalkSpeed = 600.f;
 }
@@ -230,6 +233,8 @@ void UPlayerMovementComponent::SetMovementState(EMovementState& eNewMovementStat
 	default:
 		break;
 	}
+
+	//m_pCameraComponent->UpdateFOV(eNewMovementState);
 }
 
 void UPlayerMovementComponent::OnMovementStateChange(EMovementState& eNewMovementState)
@@ -265,21 +270,6 @@ bool UPlayerMovementComponent::CanStand() const
 		return true;
 	}
 
-	//UCapsuleComponent* PlayerCapsuleComponent = m_pPlayerCharacter->GetCapsuleComponent();
-	//if (nullptr != PlayerCapsuleComponent)
-	//{
-	//	// Define CapsuleTraceLocation
-	//	// This will be the centre location of the Walking state player capsule
-	//	// 1. Get location of centre of small crouched capsule 
-	//	FVector CapsuleTraceLocation = m_pPlayerCharacter->GetActorLocation();
-	//	// 2. Subtract half the height, get location of bottom of the capsule
-	//	CapsuleTraceLocation.Z -= PlayerCapsuleComponent->GetScaledCapsuleHalfHeight();
-	//	// 3. Add the standing half height, we have reached the centre of the standing capsule
-	//	CapsuleTraceLocation.Z += m_fStandingCapsuleHalfHeight;
-
-	//	bool bSpaceOccluded = CheckCapsuleCollision(CapsuleTraceLocation, m_fStandingCapsuleHalfHeight, PlayerCapsuleComponent->GetScaledCapsuleRadius(), true);
-	//	return !bSpaceOccluded;
-	//}
 	return true;
 
 }
@@ -306,7 +296,7 @@ bool UPlayerMovementComponent::CheckCapsuleCollision(FVector Center, float HalfH
 	return bOverlapDetected;
 }
 
-void UPlayerMovementComponent::TEST()
+EMovementState UPlayerMovementComponent::GetMovementState() const
 {
-	UE_LOG(LogTemp, Warning, TEXT("?D?SADSA"));
+	return eMovementState;
 }

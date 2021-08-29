@@ -17,6 +17,7 @@
 #include "DrawDebugHelpers.h"
 #include "Module5Proj/AI/AI_Character.h"
 #include "Camera/CameraComponent.h"
+#include "Module5Proj/Player/Camera/PlayerCameraComponent.h"
 #include "Module5Proj/Player/Components/AbilityComponent.h"
 #include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
 #include "Module5Proj/Player/Abilities/Ability_Shield.h"
@@ -38,7 +39,7 @@ APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
 	BaseLookUpRate = 45.f;
 
 	// Create a CameraComponent	
-	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
+	FirstPersonCameraComponent = CreateDefaultSubobject<UPlayerCameraComponent>(TEXT("FirstPersonCamera"));
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
@@ -81,8 +82,9 @@ APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
 	m_fJumpHeight = 600.f;
 
 	m_bCanDash = true;
-	m_fDashDistance = 6000.f;
-	m_fDashCooldown = 2.f;
+	m_fDashDistance = 8000.f;
+	m_fDashCooldown = 1.f;
+	m_fDashStop = 0.1f;
 
 	m_bCanAttack = true;
 }
@@ -127,6 +129,7 @@ void APlayerCharacter::Tick(float DeltaTime)
 		//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Black, FString::Printf(TEXT("Bool: %s"), m_bPressedSprint ? TEXT("true") : TEXT("false")));
 		//GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Blue, FString::SanitizeFloat(GetFirstPersonCameraComponent()->FieldOfView));
 	}
+	
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -255,9 +258,24 @@ void APlayerCharacter::Dash()
 		GetCharacterMovement()->BrakingFriction = 0.f;
 		const FVector ForwardDir = this->GetActorRotation().Vector();
 		LaunchCharacter(ForwardDir * m_fDashDistance, true, true);
+		m_bCanDash = false;
+		GetWorld()->GetTimerManager().SetTimer(DashTimerHandle, this, &APlayerCharacter::DashStop, m_fDashStop, false);
 
 		//UGameplayStatics::GetPlayerCharacter(GetWorld(),0)->GetVelocity().Normalize() * m_fDashDistance;
 	}
+}
+
+void APlayerCharacter::DashStop()
+{
+	GetCharacterMovement()->StopMovementImmediately();
+	GetCharacterMovement()->BrakingFrictionFactor = 2.f;
+	GetWorld()->GetTimerManager().SetTimer(DashTimerHandle, this, &APlayerCharacter::DashReset, m_fDashCooldown, false);
+
+}
+
+void APlayerCharacter::DashReset()
+{
+	m_bCanDash = true;
 }
 
 void APlayerCharacter::MoveForward(float Value)

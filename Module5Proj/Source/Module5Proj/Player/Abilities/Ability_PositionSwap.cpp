@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Module5Proj/AI/AI_Character.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
+#include "Module5Proj/Player/Camera/PlayerCameraComponent.h"
 #include "Camera/CameraComponent.h"
 #include "DrawDebugHelpers.h"
 
@@ -26,10 +27,7 @@ void UAbility_PositionSwap::BeginPlay()
 
 void UAbility_PositionSwap::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
-    if (GEngine)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Purple, FString::SanitizeFloat(m_fCurrentAbilitySize));
-    }
+ 
 
 }
 
