@@ -3,6 +3,9 @@
 
 #include "AbilityWidget.h"
 
+#include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
+#include "Module5Proj/Player/Abilities/Ability_Shield.h"
+
 UAbilityWidget::UAbilityWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
 	
@@ -14,17 +17,19 @@ void UAbilityWidget::NativeConstruct()
 }
 
 
-void UAbilityWidget::UpdateAbilitySwapBar(float currentValue, float maxValue)
+void UAbilityWidget::UpdateAbilitySwapBar(class UAbility_PositionSwap* AbilityComp)
 {
 	if(AbilitySwapBar && AbilitySwapImage)
 	{
 		AbilitySwapImage->SetVisibility(ESlateVisibility::Visible);
 		AbilitySwapBar->SetVisibility(ESlateVisibility::Visible);
+		float currentValue = AbilityComp->GetCurrentAbilitySize();
+		float maxValue = AbilityComp->GetMaxAbilitySize();
 		AbilitySwapBar->SetPercent(currentValue / maxValue);
 	}
 }
 
-void UAbilityWidget::UpdateAbilityShieldBar(int value)
+void UAbilityWidget::UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp)
 {
 	if(AbilityShieldFillOne && AbilityShieldFillTwo && AbilityShieldFillThree)
 	{
@@ -33,17 +38,20 @@ void UAbilityWidget::UpdateAbilityShieldBar(int value)
 		AbilityShieldFillThree->SetVisibility(ESlateVisibility::Visible);
 	}
 
-	if(value == 3)
+	int value = AbilityComp->GetCurrentShieldCharges();
+
+	if (value == 2)
 	{
+
 		AbilityShieldFillThree->SetCheckedState(ECheckBoxState::Unchecked);
 	}
 
-	if (value == 2)
+	if (value == 1)
 	{
 		AbilityShieldFillTwo->SetCheckedState(ECheckBoxState::Unchecked);
 	}
 
-	if (value == 1)
+	if(value == 0)
 	{
 		AbilityShieldFillOne->SetCheckedState(ECheckBoxState::Unchecked);
 	}

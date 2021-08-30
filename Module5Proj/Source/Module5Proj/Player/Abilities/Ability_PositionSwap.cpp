@@ -26,10 +26,10 @@ void UAbility_PositionSwap::BeginPlay()
 
     m_ACPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
     GameHUD = Cast<AModule5ProjHUD>(GetWorld()->GetFirstPlayerController()->GetHUD());
-    if (GameHUD)
+ /*   if (GameHUD)
     {
         GameHUD->UpdateAbilitySwapBar(m_fCurrentAbilitySize, m_fMaxAbilitySize);
-    }
+    }*/
 }
 
 void UAbility_PositionSwap::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -46,6 +46,7 @@ void UAbility_PositionSwap::AbilityActivated()
         GetWorld()->GetTimerManager().SetTimer(TimerAbilityDecreaseRate, this, &UAbility_PositionSwap::DecreaseAbilitySize, m_fAbilityDecreaseRate, true);
         m_ACPlayerCharacter->GetFirstPersonCameraComponent()->PostProcessSettings.ColorGamma = FVector4(1.350000, 1.040000, 1.060000, 0.600000);
         UGameplayStatics::SetGlobalTimeDilation(GetWorld(), 0.25);
+    	UGameplayStatics::PlaySound2D(GetWorld(), BeginTimeStop, 1, 1);
         m_bAbilityActive = true;
     }
 
@@ -56,6 +57,7 @@ void UAbility_PositionSwap::AbilityCancelled()
     GetWorld()->GetTimerManager().ClearTimer(TimerAbilityDecreaseRate);
     m_ACPlayerCharacter->GetFirstPersonCameraComponent()->PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
     UGameplayStatics::SetGlobalTimeDilation(GetWorld(), 1);
+    UGameplayStatics::PlaySound2D(GetWorld(), FinishTimeStop, 1, 1);
     m_bAbilityActive = false;
 }
 
@@ -101,10 +103,10 @@ void UAbility_PositionSwap::DecreaseAbilitySize()
     {
         m_fCurrentAbilitySize--;
 
-        if(GameHUD)
-        {
-            GameHUD->UpdateAbilitySwapBar(m_fCurrentAbilitySize, m_fMaxAbilitySize);
-        }
+        //if(GameHUD)
+        //{
+        //    GameHUD->UpdateAbilitySwapBar(m_fCurrentAbilitySize, m_fMaxAbilitySize);
+        //}
     }
     else
     {

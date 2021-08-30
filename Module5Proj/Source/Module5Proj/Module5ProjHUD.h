@@ -26,16 +26,25 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 
 	UFUNCTION()
-	void UpdateAbilitySwapBar(float currentValue, float maxValue);
+	void UpdateAbilitySwapBar(class UAbility_PositionSwap* AbilityComp);
 
 	UFUNCTION()
-	void UpdateAbilityShieldBar(int value);
+	void UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp);
+
+	UFUNCTION()
+	void UpdateHUD();
 
 	UPROPERTY(EditDefaultsOnly, Category = "Widgets")
 	TSubclassOf<UUserWidget> AbilityWidgetClass;
 
 	void ShowMenu();
 	void RemoveMenu();
+
+	class APlayerCharacter* PlayerChar;
+
+	class UAbility_PositionSwap* AbilityPosSwapComp;
+
+	class UAbility_Shield* AbilityShieldComp;
 
 private:
 	/** Crosshair asset pointer */

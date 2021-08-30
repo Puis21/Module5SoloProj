@@ -8,6 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UAbility_Shield;
+class UAbility_PositionSwap;
 #ifdef MODULE5PROJ_Module5ProjHUD_generated_h
 #error "Module5ProjHUD.generated.h already included, missing '#pragma once' in Module5ProjHUD.h"
 #endif
@@ -16,12 +18,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define Module5Proj_Source_Module5Proj_Module5ProjHUD_h_16_SPARSE_DATA
 #define Module5Proj_Source_Module5Proj_Module5ProjHUD_h_16_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execUpdateHUD); \
 	DECLARE_FUNCTION(execUpdateAbilityShieldBar); \
 	DECLARE_FUNCTION(execUpdateAbilitySwapBar);
 
 
 #define Module5Proj_Source_Module5Proj_Module5ProjHUD_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUpdateHUD); \
 	DECLARE_FUNCTION(execUpdateAbilityShieldBar); \
 	DECLARE_FUNCTION(execUpdateAbilitySwapBar);
 

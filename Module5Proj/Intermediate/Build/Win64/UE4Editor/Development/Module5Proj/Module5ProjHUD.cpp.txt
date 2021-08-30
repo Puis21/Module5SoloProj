@@ -1049,3 +1049,11 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/I
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Docking/SDockTab.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Docking/SDockableTab.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Docking/SDockTabStack.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Source\Module5Proj/Player/Abilities/Ability_PositionSwap.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Source\Module5Proj/Player/Components/AbilityComponent.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\AbilityComponent.generated.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\Ability_PositionSwap.generated.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Source\Module5Proj/Player/Abilities/Ability_Shield.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\Ability_Shield.generated.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Source\Module5Proj/Player/PlayerCharacter.h
+C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\PlayerCharacter.generated.h

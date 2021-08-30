@@ -19,6 +19,7 @@ class UMeleeComponent;
 class UAbilityComponent;
 class UAbility_PositionSwap;
 class UAbility_Shield;
+class UPickUpComponent;
 
 UCLASS(config = Game)
 class APlayerCharacter : public ACharacter
@@ -134,6 +135,10 @@ public:
 
 	UPlayerMovementComponent* GetPlayerMovementComponent() const { return m_ACPlayerMovementComponent; }
 
+	UAbility_PositionSwap* GetAbilityPosSwap() const { return m_ACAbilitySwapPos; }
+
+	UAbility_Shield* GetAbilityShield() const { return m_ACAbilityShield; }
+
 	void DoubleJump();
 
 	void Dash();
@@ -160,6 +165,9 @@ private:
 
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), DisplayName = "Melee Component")
 		UMeleeComponent* m_ACMeleeComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stats", meta = (AllowPrivateAccess = "true"), DisplayName = "PickUp Component")
+		UPickUpComponent* M_ACPickUpComponent;
 
 	UPROPERTY()
 	FTimerHandle DashTimerHandle;

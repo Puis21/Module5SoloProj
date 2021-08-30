@@ -26,10 +26,10 @@ void UAbility_Shield::BeginPlay()
 
     m_ACPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
     GameHUD = Cast<AModule5ProjHUD>(GetWorld()->GetFirstPlayerController()->GetHUD());
-    if (GameHUD)
-    {
-        GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
-    }
+    //if (GameHUD)
+    //{
+    //    GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
+    //}
 
 }
 
@@ -49,10 +49,10 @@ void UAbility_Shield::AbilityUsed()
 {
 	if(m_iCurrentAbilityCharges > 0 && m_bCanUseAbility && !m_bAbilityActive)
 	{
-        if (GameHUD)
-        {
-            GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
-        }
+        //if (GameHUD)
+        //{
+        //    GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
+        //}
 		GetWorld()->GetTimerManager().SetTimer(TimerAbilityActive, this, &UAbility_Shield::ShieldDuration, 1.f, true);
 		m_iCurrentAbilityCharges--;
 		m_bAbilityActive = true;

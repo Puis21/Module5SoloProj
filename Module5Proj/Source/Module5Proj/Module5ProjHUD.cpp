@@ -10,6 +10,9 @@
 #include "Module5Proj/UI/SMenuWidget.h"
 #include "Widgets/SWeakWidget.h"
 #include "GameFramework/PlayerController.h"
+#include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
+#include "Module5Proj/Player/Abilities/Ability_Shield.h"
+#include "Module5Proj/Player/PlayerCharacter.h"
 
 AModule5ProjHUD::AModule5ProjHUD()
 {
@@ -31,11 +34,19 @@ void AModule5ProjHUD::BeginPlay()
 			AbilityWidget->AddToViewport();
 		}
 	}
+
+	PlayerChar = Cast<APlayerCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+	AbilityPosSwapComp = Cast<UAbility_PositionSwap>(PlayerChar->GetComponentByClass(UAbility_PositionSwap::StaticClass()));
+
+	AbilityShieldComp = Cast<UAbility_Shield>(PlayerChar->GetComponentByClass(UAbility_Shield::StaticClass()));
 }
 
 void AModule5ProjHUD::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	UpdateHUD();
 
 }
 
@@ -58,19 +69,25 @@ void AModule5ProjHUD::DrawHUD()
 	Canvas->DrawItem( TileItem );
 }
 
-void AModule5ProjHUD::UpdateAbilitySwapBar(float currentValue, float maxValue)
+void AModule5ProjHUD::UpdateHUD()
+{
+	UpdateAbilitySwapBar(AbilityPosSwapComp);
+	UpdateAbilityShieldBar(AbilityShieldComp);
+}
+
+void AModule5ProjHUD::UpdateAbilitySwapBar(class UAbility_PositionSwap* AbilityComp)
 {
 	if(AbilityWidget)
 	{
-		AbilityWidget->UpdateAbilitySwapBar(currentValue, maxValue);
+		AbilityWidget->UpdateAbilitySwapBar(AbilityComp);
 	}
 }
 
-void AModule5ProjHUD::UpdateAbilityShieldBar(int value)
+void AModule5ProjHUD::UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp)
 {
 	if(AbilityWidget)
 	{
-		AbilityWidget->UpdateAbilityShieldBar(value);
+		AbilityWidget->UpdateAbilityShieldBar(AbilityComp);
 	}
 }
 

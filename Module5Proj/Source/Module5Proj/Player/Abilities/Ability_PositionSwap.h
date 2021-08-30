@@ -33,6 +33,18 @@ public:
 
 	bool GetAbilityActive() const { return m_bAbilityActive; }
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
+	USoundBase* BeginTimeStop;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
+	USoundBase* FinishTimeStop;
+
+	void SetAbilitySize(float size)	{ m_fCurrentAbilitySize = size; }
+
+	float GetMaxAbilitySize() { return m_fMaxAbilitySize; }
+
+	float GetCurrentAbilitySize() { return m_fCurrentAbilitySize; }
+
 protected:
 
 	UPROPERTY()

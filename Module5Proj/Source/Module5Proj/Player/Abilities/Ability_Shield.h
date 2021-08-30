@@ -29,6 +29,12 @@ public:
 	void ShieldStop();
 
 	bool GetShieldActive() const { return m_bAbilityActive; }
+	
+	void SetAbilityCharges(int size) { m_iCurrentAbilityCharges = size; }
+
+	int GetCurrentShieldCharges() const { return m_iCurrentAbilityCharges; }
+
+	int GetMaxShieldCharges() const { return m_iMaxAbilityCharges; }
 
 protected:
 

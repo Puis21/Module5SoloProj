@@ -17,24 +17,32 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 	MODULE5PROJ_API UClass* Z_Construct_UClass_AModule5ProjHUD();
 	ENGINE_API UClass* Z_Construct_UClass_AHUD();
 	UPackage* Z_Construct_UPackage__Script_Module5Proj();
+	MODULE5PROJ_API UClass* Z_Construct_UClass_UAbility_Shield_NoRegister();
+	MODULE5PROJ_API UClass* Z_Construct_UClass_UAbility_PositionSwap_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(AModule5ProjHUD::execUpdateAbilityShieldBar)
+	DEFINE_FUNCTION(AModule5ProjHUD::execUpdateHUD)
 	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_value);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->UpdateAbilityShieldBar(Z_Param_value);
+		P_THIS->UpdateHUD();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AModule5ProjHUD::execUpdateAbilityShieldBar)
+	{
+		P_GET_OBJECT(UAbility_Shield,Z_Param_AbilityComp);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateAbilityShieldBar(Z_Param_AbilityComp);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AModule5ProjHUD::execUpdateAbilitySwapBar)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_currentValue);
-		P_GET_PROPERTY(FFloatProperty,Z_Param_maxValue);
+		P_GET_OBJECT(UAbility_PositionSwap,Z_Param_AbilityComp);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->UpdateAbilitySwapBar(Z_Param_currentValue,Z_Param_maxValue);
+		P_THIS->UpdateAbilitySwapBar(Z_Param_AbilityComp);
 		P_NATIVE_END;
 	}
 	void AModule5ProjHUD::StaticRegisterNativesAModule5ProjHUD()
@@ -43,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "UpdateAbilityShieldBar", &AModule5ProjHUD::execUpdateAbilityShieldBar },
 			{ "UpdateAbilitySwapBar", &AModule5ProjHUD::execUpdateAbilitySwapBar },
+			{ "UpdateHUD", &AModule5ProjHUD::execUpdateHUD },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -50,18 +59,26 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 	{
 		struct Module5ProjHUD_eventUpdateAbilityShieldBar_Parms
 		{
-			int32 value;
+			UAbility_Shield* AbilityComp;
 		};
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_value;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AbilityComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AbilityComp;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Module5ProjHUD_eventUpdateAbilityShieldBar_Parms, value), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_AbilityComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_AbilityComp = { "AbilityComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Module5ProjHUD_eventUpdateAbilityShieldBar_Parms, AbilityComp), Z_Construct_UClass_UAbility_Shield_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_AbilityComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_AbilityComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_value,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::NewProp_AbilityComp,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar_Statics::Function_MetaDataParams[] = {
@@ -82,22 +99,26 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 	{
 		struct Module5ProjHUD_eventUpdateAbilitySwapBar_Parms
 		{
-			float currentValue;
-			float maxValue;
+			UAbility_PositionSwap* AbilityComp;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_currentValue;
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AbilityComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AbilityComp;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_currentValue = { "currentValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Module5ProjHUD_eventUpdateAbilitySwapBar_Parms, currentValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_maxValue = { "maxValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Module5ProjHUD_eventUpdateAbilitySwapBar_Parms, maxValue), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_AbilityComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_AbilityComp = { "AbilityComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Module5ProjHUD_eventUpdateAbilitySwapBar_Parms, AbilityComp), Z_Construct_UClass_UAbility_PositionSwap_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_AbilityComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_AbilityComp_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_currentValue,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_maxValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::NewProp_AbilityComp,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::Function_MetaDataParams[] = {
@@ -111,6 +132,28 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Module5ProjHUD.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AModule5ProjHUD, nullptr, "UpdateHUD", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -138,8 +181,9 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Module5Proj,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AModule5ProjHUD_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar, "UpdateAbilityShieldBar" }, // 879774564
-		{ &Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar, "UpdateAbilitySwapBar" }, // 2095344293
+		{ &Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilityShieldBar, "UpdateAbilityShieldBar" }, // 1815601134
+		{ &Z_Construct_UFunction_AModule5ProjHUD_UpdateAbilitySwapBar, "UpdateAbilitySwapBar" }, // 3910729976
+		{ &Z_Construct_UFunction_AModule5ProjHUD_UpdateHUD, "UpdateHUD" }, // 1145535072
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AModule5ProjHUD_Statics::Class_MetaDataParams[] = {
@@ -186,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeModule5ProjHUD() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AModule5ProjHUD, 4005335918);
+	IMPLEMENT_CLASS(AModule5ProjHUD, 4123039744);
 	template<> MODULE5PROJ_API UClass* StaticClass<AModule5ProjHUD>()
 	{
 		return AModule5ProjHUD::StaticClass();

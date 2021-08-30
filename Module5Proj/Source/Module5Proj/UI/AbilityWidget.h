@@ -23,9 +23,9 @@ public:
 
 	virtual void NativeConstruct() override;
 
-	void UpdateAbilitySwapBar(float currentValue, float maxValue);
+	void UpdateAbilitySwapBar(class UAbility_PositionSwap* AbilityComp);
 
-	void UpdateAbilityShieldBar(int value);
+	void UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp);
 
 	void ResetAbilitySwapBar();
 

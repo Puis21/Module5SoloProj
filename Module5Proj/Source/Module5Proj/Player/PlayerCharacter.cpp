@@ -22,6 +22,8 @@
 #include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
 #include "Module5Proj/Player/Abilities/Ability_Shield.h"
 #include "Module5Proj/Player/Components/MeleeComponent.h"
+#include "Module5Proj/Player/Components/PickUpComponent.h"
+#include "Module5Proj/Player/PlayerSave.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -33,6 +35,7 @@ APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverLapBegin);
 
 	// set our turn rates for input
 	BaseTurnRate = 45.f;
@@ -73,6 +76,8 @@ APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
 	m_ACAbilityShield = CreateDefaultSubobject<UAbility_Shield>(TEXT("Ability_Shield"));
 
 	m_ACMeleeComponent = CreateDefaultSubobject<UMeleeComponent>(TEXT("Melee Component"));
+
+	M_ACPickUpComponent = CreateDefaultSubobject<UPickUpComponent>(TEXT("Pickup Component"));
 
 	m_bPressedSprint = false;
 	bPressedCrouch = false;
@@ -189,6 +194,10 @@ void APlayerCharacter::OnOverLapBegin(UPrimitiveComponent* OverlappedComponent, 
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
 				UGameplayStatics::PlaySoundAtLocation(this, HitSound, Enemy->GetActorLocation());
 			}
+		}
+		if(M_ACPickUpComponent)
+		{
+			M_ACPickUpComponent->OnOverLap(OtherActor);
 		}
 	}
 }
