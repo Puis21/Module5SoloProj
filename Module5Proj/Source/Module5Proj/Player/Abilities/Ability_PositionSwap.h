@@ -7,6 +7,7 @@
 #include "Ability_PositionSwap.generated.h"
 
 class APlayerCharacter;
+class AModule5ProjHUD;
 
 UCLASS()
 class MODULE5PROJ_API UAbility_PositionSwap : public UAbilityComponent
@@ -41,5 +42,7 @@ private:
 
 	UFUNCTION()
 		void DecreaseAbilitySize();
+
+	AModule5ProjHUD* GameHUD;
 
 };

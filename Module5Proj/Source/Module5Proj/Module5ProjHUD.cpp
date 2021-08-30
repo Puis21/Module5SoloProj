@@ -2,18 +2,42 @@
 
 #include "Module5ProjHUD.h"
 #include "Engine/Canvas.h"
+#include "Engine/Engine.h"
 #include "Engine/Texture2D.h"
 #include "TextureResource.h"
 #include "CanvasItem.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Module5Proj/UI/SMenuWidget.h"
+#include "Widgets/SWeakWidget.h"
+#include "GameFramework/PlayerController.h"
 
 AModule5ProjHUD::AModule5ProjHUD()
 {
 	// Set the crosshair texture
 	static ConstructorHelpers::FObjectFinder<UTexture2D> CrosshairTexObj(TEXT("/Game/FirstPerson/Textures/FirstPersonCrosshair"));
 	CrosshairTex = CrosshairTexObj.Object;
+
 }
 
+void AModule5ProjHUD::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if(AbilityWidgetClass)
+	{
+		AbilityWidget = CreateWidget<UAbilityWidget>(GetWorld(), AbilityWidgetClass);
+		if(AbilityWidget)
+		{
+			AbilityWidget->AddToViewport();
+		}
+	}
+}
+
+void AModule5ProjHUD::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+}
 
 void AModule5ProjHUD::DrawHUD()
 {
@@ -33,3 +57,51 @@ void AModule5ProjHUD::DrawHUD()
 	TileItem.BlendMode = SE_BLEND_Translucent;
 	Canvas->DrawItem( TileItem );
 }
+
+void AModule5ProjHUD::UpdateAbilitySwapBar(float currentValue, float maxValue)
+{
+	if(AbilityWidget)
+	{
+		AbilityWidget->UpdateAbilitySwapBar(currentValue, maxValue);
+	}
+}
+
+void AModule5ProjHUD::UpdateAbilityShieldBar(int value)
+{
+	if(AbilityWidget)
+	{
+		AbilityWidget->UpdateAbilityShieldBar(value);
+	}
+}
+
+void AModule5ProjHUD::ShowMenu()
+{
+	if (GEngine && GEngine->GameViewport)
+	{
+		MenuWidget = SNew(SMenuWidget).OwningHUD(this);
+		GEngine->GameViewport->AddViewportWidgetContent(SAssignNew(MenuWidgetContainer, SWeakWidget).PossiblyNullContent(MenuWidget.ToSharedRef()));
+		UGameplayStatics::SetGamePaused(GetWorld(),true);
+	}
+
+	if(PlayerOwner)
+	{
+		PlayerOwner->bShowMouseCursor = true;
+		PlayerOwner->SetInputMode(FInputModeUIOnly());
+	}
+}
+
+void AModule5ProjHUD::RemoveMenu()
+{
+	if (GEngine && GEngine->GameViewport && MenuWidgetContainer.IsValid())
+	{
+		GEngine->GameViewport->RemoveViewportWidgetContent(MenuWidgetContainer.ToSharedRef());
+		UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+		if(PlayerOwner)
+		{
+			PlayerOwner->bShowMouseCursor = false;
+			PlayerOwner->SetInputMode(FInputModeGameOnly());
+		}
+	}
+}
+

@@ -4,6 +4,7 @@
 #include "Module5ProjHUD.h"
 #include "Module5ProjCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Module5Proj/Player/MenuPlayerController.h"
 
 AModule5ProjGameMode::AModule5ProjGameMode()
 	: Super()
@@ -14,4 +15,6 @@ AModule5ProjGameMode::AModule5ProjGameMode()
 
 	// use our custom HUD class
 	HUDClass = AModule5ProjHUD::StaticClass();
+
+	PlayerControllerClass = AMenuPlayerController::StaticClass();
 }

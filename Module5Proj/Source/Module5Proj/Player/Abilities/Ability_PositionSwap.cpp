@@ -7,10 +7,13 @@
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include "Module5Proj/Player/Camera/PlayerCameraComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Module5Proj/Module5ProjHUD.h"
 #include "DrawDebugHelpers.h"
 
 UAbility_PositionSwap::UAbility_PositionSwap()
 {
+    PrimaryComponentTick.bCanEverTick = true;
+
     m_fMaxAbilitySize = 30.f;
     m_fCurrentAbilitySize = m_fMaxAbilitySize;
     m_fAbilityDecreaseRate = 0.25f;
@@ -22,12 +25,17 @@ void UAbility_PositionSwap::BeginPlay()
     Super::BeginPlay();
 
     m_ACPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
-
+    GameHUD = Cast<AModule5ProjHUD>(GetWorld()->GetFirstPlayerController()->GetHUD());
+    if (GameHUD)
+    {
+        GameHUD->UpdateAbilitySwapBar(m_fCurrentAbilitySize, m_fMaxAbilitySize);
+    }
 }
 
 void UAbility_PositionSwap::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
- 
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
 
 }
 
@@ -92,6 +100,11 @@ void UAbility_PositionSwap::DecreaseAbilitySize()
     if (m_fCurrentAbilitySize <= m_fMaxAbilitySize && m_fCurrentAbilitySize != 0)
     {
         m_fCurrentAbilitySize--;
+
+        if(GameHUD)
+        {
+            GameHUD->UpdateAbilitySwapBar(m_fCurrentAbilitySize, m_fMaxAbilitySize);
+        }
     }
     else
     {

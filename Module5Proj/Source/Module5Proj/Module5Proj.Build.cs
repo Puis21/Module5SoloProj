@@ -17,7 +17,13 @@ public class Module5Proj : ModuleRules
 			"AIModule",
 			"GameplayTasks",
 			"NavigationSystem",
-			"Niagara"
+			"Niagara",
+			"UMG"
 		});
+
+		PrivateDependencyModuleNames.AddRange(new string[] {
+			"Slate",
+			"SlateCore"
+        });
 	}
 }

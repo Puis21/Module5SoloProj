@@ -4,15 +4,13 @@
 #include "Ability_Shield.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include "Particles/ParticleSystemComponent.h"
-#include "Components/BoxComponent.h"
+#include "Module5Proj/Module5ProjHUD.h"
 #include "Kismet/GameplayStatics.h"
-#include "Camera/CameraComponent.h"
-#include "DrawDebugHelpers.h"
 
 
 UAbility_Shield::UAbility_Shield()
 {
-
+	
     PrimaryComponentTick.bCanEverTick = true;
 
     m_iMaxAbilityCharges = 3;
@@ -27,6 +25,11 @@ void UAbility_Shield::BeginPlay()
     Super::BeginPlay();
 
     m_ACPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
+    GameHUD = Cast<AModule5ProjHUD>(GetWorld()->GetFirstPlayerController()->GetHUD());
+    if (GameHUD)
+    {
+        GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
+    }
 
 }
 
@@ -34,10 +37,10 @@ void UAbility_Shield::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
     Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-    if (GEngine)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Purple, FString::SanitizeFloat(m_fCurrentAbilitySize));
-    }
+    //if (GEngine)
+    //{
+    //    GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Purple, FString::SanitizeFloat(m_fCurrentAbilitySize));
+    //}
 
 }
 
@@ -46,8 +49,11 @@ void UAbility_Shield::AbilityUsed()
 {
 	if(m_iCurrentAbilityCharges > 0 && m_bCanUseAbility && !m_bAbilityActive)
 	{
+        if (GameHUD)
+        {
+            GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
+        }
 		GetWorld()->GetTimerManager().SetTimer(TimerAbilityActive, this, &UAbility_Shield::ShieldDuration, 1.f, true);
-		UE_LOG(LogTemp, Warning, TEXT("Ability 2 USed"));
 		m_iCurrentAbilityCharges--;
 		m_bAbilityActive = true;
 		m_bCanUseAbility = false;
@@ -77,4 +83,5 @@ void UAbility_Shield::ShieldStop()
     m_bCanUseAbility = true;
     m_fCurrentShieldDuration = m_fMaxShieldDuration;
     m_pShieldParticleComponent->Deactivate();
+    GetWorld()->GetTimerManager().ClearTimer(TimerAbilityActive);
 }

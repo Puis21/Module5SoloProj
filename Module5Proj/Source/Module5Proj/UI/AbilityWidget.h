@@ -19,14 +19,28 @@ class MODULE5PROJ_API UAbilityWidget : public UUserWidget
 
 public:
 
-	//UAbilityWidget(const FObjectInitializer& ObjectInitializer);
+	UAbilityWidget(const FObjectInitializer& ObjectInitializer);
 
-	//virtual void NativeConstruct() override;
+	virtual void NativeConstruct() override;
 
-	//void UpdateAbilitySwapBar();
+	void UpdateAbilitySwapBar(float currentValue, float maxValue);
 
-	//void ResetAbilitySwapBar();
+	void UpdateAbilityShieldBar(int value);
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-	//class UProgressBar* AbilitySwapBar;
+	void ResetAbilitySwapBar();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UProgressBar* AbilitySwapBar;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UImage* AbilitySwapImage;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UCheckBox* AbilityShieldFillOne;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UCheckBox* AbilityShieldFillTwo;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UCheckBox* AbilityShieldFillThree;
 };

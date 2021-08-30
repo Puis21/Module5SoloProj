@@ -7,6 +7,7 @@
 #include "Ability_Shield.generated.h"
 
 class APlayerCharacter;
+class AModule5ProjHUD;
 
 UCLASS()
 class MODULE5PROJ_API UAbility_Shield : public UAbilityComponent
@@ -55,4 +56,5 @@ private:
 	UPROPERTY(EditAnywhere)
 		float m_fCurrentShieldDuration;
 
+	AModule5ProjHUD* GameHUD;
 };
