@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Module5Proj.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FB99EEC6-0FAF-41E3-AD12-A4787E52075A}</UniqueIdentifier>
+      <UniqueIdentifier>{EA842243-ED82-4039-AD17-D73C9D9A0581}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Module5Proj.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{160A7EE9-030F-413C-90FF-007910C0E910}</UniqueIdentifier>
+      <UniqueIdentifier>{A8939D98-00DF-4DB1-BD26-A4CDE74FDE7D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Module5Proj">
-      <UniqueIdentifier>{419F4669-7C12-4528-A366-B9174F69A243}</UniqueIdentifier>
+      <UniqueIdentifier>{91094996-9F99-4BAF-AF89-4B9938AFB62B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Module5Proj\Blackboard_Keys.h">
       <Filter>Source\Module5Proj</Filter>
@@ -68,8 +68,14 @@
     <ClInclude Include="..\..\Source\Module5Proj\Module5ProjProjectile.h">
       <Filter>Source\Module5Proj</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\TestTrigger.cpp">
+      <Filter>Source\Module5Proj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\TestTrigger.h">
+      <Filter>Source\Module5Proj</Filter>
+    </ClInclude>
     <Filter Include="Source\Module5Proj\AI">
-      <UniqueIdentifier>{5E2919FF-9EFE-4A00-B9BF-C00954EE336D}</UniqueIdentifier>
+      <UniqueIdentifier>{01E45CC3-CD25-4F4D-B467-A8C70BA053E9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\AI\AI_Character.cpp">
       <Filter>Source\Module5Proj\AI</Filter>
@@ -84,7 +90,7 @@
       <Filter>Source\Module5Proj\AI</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\AI\Tasks">
-      <UniqueIdentifier>{29244151-A10A-455A-955C-9738C95577F0}</UniqueIdentifier>
+      <UniqueIdentifier>{4FA117BB-4939-4853-8E36-D6549FEE629F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\AI\Tasks\Shoot_Task.cpp">
       <Filter>Source\Module5Proj\AI\Tasks</Filter>
@@ -93,7 +99,7 @@
       <Filter>Source\Module5Proj\AI\Tasks</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player">
-      <UniqueIdentifier>{6AD14DA5-D5C6-4BBA-81A0-B36CEABC2838}</UniqueIdentifier>
+      <UniqueIdentifier>{2C7D161D-A41A-4CB5-9C9B-3630E2A27301}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\MenuPlayerController.cpp">
       <Filter>Source\Module5Proj\Player</Filter>
@@ -114,7 +120,7 @@
       <Filter>Source\Module5Proj\Player</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Abilities">
-      <UniqueIdentifier>{A803A921-E44D-4C8D-B51E-438A3E5C95A2}</UniqueIdentifier>
+      <UniqueIdentifier>{F3899CB0-6A8E-4910-8996-8C8C62D75F9B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Abilities\Ability_PositionSwap.cpp">
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
@@ -129,7 +135,7 @@
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Camera">
-      <UniqueIdentifier>{951EDB1C-CA78-40E6-9359-79ECB757511A}</UniqueIdentifier>
+      <UniqueIdentifier>{D096A0FA-50B9-4FF4-8720-61201B69D27B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Camera\PlayerCameraComponent.cpp">
       <Filter>Source\Module5Proj\Player\Camera</Filter>
@@ -144,7 +150,7 @@
       <Filter>Source\Module5Proj\Player\Camera</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Components">
-      <UniqueIdentifier>{21263888-808F-46BB-8AEE-509A9A9025CD}</UniqueIdentifier>
+      <UniqueIdentifier>{C872A30B-8D8A-42F6-946C-974704491810}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Components\AbilityComponent.cpp">
       <Filter>Source\Module5Proj\Player\Components</Filter>
@@ -171,7 +177,7 @@
       <Filter>Source\Module5Proj\Player\Components</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Interactables">
-      <UniqueIdentifier>{1D399666-1910-4ED6-AFCF-4A8F11DA3E51}</UniqueIdentifier>
+      <UniqueIdentifier>{BD352B1B-3F03-47A3-ACBC-2071D665925B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Interactables\AbilityPickUp.cpp">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
@@ -179,14 +185,14 @@
     <ClInclude Include="..\..\Source\Module5Proj\Player\Interactables\AbilityPickUp.h">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Module5Proj\Player\Interactables\CheckPoint.cpp">
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Interactables\Checkpoint.cpp">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Module5Proj\Player\Interactables\CheckPoint.h">
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Interactables\Checkpoint.h">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Notifies">
-      <UniqueIdentifier>{C05BE27E-C1AF-41A3-B2D0-094002B41AD2}</UniqueIdentifier>
+      <UniqueIdentifier>{FB634572-5882-44CB-A1BB-F9C34A24DE70}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\ActivateMeleeDamage.cpp">
       <Filter>Source\Module5Proj\Player\Notifies</Filter>
@@ -207,7 +213,7 @@
       <Filter>Source\Module5Proj\Player\Notifies</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\UI">
-      <UniqueIdentifier>{828F245C-9108-4FC1-8A45-7E22EF0AF20D}</UniqueIdentifier>
+      <UniqueIdentifier>{FA494A62-603D-4B14-A702-85E5715B9B66}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\UI\AbilityWidget.cpp">
       <Filter>Source\Module5Proj\UI</Filter>

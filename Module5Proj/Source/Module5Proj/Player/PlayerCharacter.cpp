@@ -122,6 +122,10 @@ void APlayerCharacter::BeginPlay()
 	CombatCollision->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnOverLapBegin);
 	CombatCollision->OnComponentEndOverlap.AddDynamic(this, &APlayerCharacter::OnOverlapEnd);
 
+	UPlayerSave* SaveGameInstance = Cast<UPlayerSave>(UGameplayStatics::CreateSaveGameObject(UPlayerSave::StaticClass()));
+	SaveGameInstance->SavePlayerPos(this->GetActorLocation(), this->GetActorRotation());
+	UGameplayStatics::SaveGameToSlot(SaveGameInstance, TEXT("Save Slot"), 0);
+
 }
 
 void APlayerCharacter::Tick(float DeltaTime)
@@ -178,6 +182,8 @@ void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("Mouse_Right", IE_Pressed, this, &APlayerCharacter::OnAbilityCancel);
 
 	PlayerInputComponent->BindAction("Ability_Shield", IE_Pressed, this, &APlayerCharacter::OnAbility3Used);
+
+	PlayerInputComponent->BindAction("DieTEST", IE_Pressed, this, &APlayerCharacter::Die);
 
 }
 
@@ -412,7 +418,6 @@ void APlayerCharacter::OnAbility2Used()
 	{
 		m_ACAbilitySwapPos->AbilityUsed();
 	}
-
 }
 
 void APlayerCharacter::OnAbilityCancel()
@@ -436,6 +441,10 @@ void APlayerCharacter::Die()
 {
 	if (!m_ACAbilityShield->GetShieldActive())
 	{
+		UPlayerSave* SaveGameInstance = Cast<UPlayerSave>(UGameplayStatics::LoadGameFromSlot("Save Slot", 0));
+		this->SetActorLocation(SaveGameInstance->PlayerLocation);
+		this->SetActorRotation(SaveGameInstance->PlayerRotation);\
+		GetCharacterMovement()->StopMovementImmediately();
 		UE_LOG(LogTemp, Warning, TEXT("DED"));
 	}
 
