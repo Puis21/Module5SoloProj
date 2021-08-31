@@ -54,6 +54,7 @@ void UAbility_Shield::AbilityUsed()
         //    GameHUD->UpdateAbilityShieldBar(m_iCurrentAbilityCharges);
         //}
 		GetWorld()->GetTimerManager().SetTimer(TimerAbilityActive, this, &UAbility_Shield::ShieldDuration, 1.f, true);
+        UGameplayStatics::PlaySound2D(GetWorld(), ShieldActivate, 0.75, 1);
 		m_iCurrentAbilityCharges--;
 		m_bAbilityActive = true;
 		m_bCanUseAbility = false;

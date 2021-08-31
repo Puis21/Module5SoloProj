@@ -40,6 +40,13 @@ void UAbilityWidget::UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp)
 
 	int value = AbilityComp->GetCurrentShieldCharges();
 
+	if(value >= 3)
+	{
+		AbilityShieldFillThree->SetCheckedState(ECheckBoxState::Checked);
+		AbilityShieldFillTwo->SetCheckedState(ECheckBoxState::Checked);
+		AbilityShieldFillOne->SetCheckedState(ECheckBoxState::Checked);
+	}
+
 	if (value == 2)
 	{
 

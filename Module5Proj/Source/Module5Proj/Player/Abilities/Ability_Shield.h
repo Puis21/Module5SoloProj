@@ -49,7 +49,10 @@ public:
 	class UParticleSystemComponent* m_pShieldParticleComponent;
 
 	UPROPERTY(BlueprintReadOnly)
-		FTimerHandle TimerAbilityActive;
+	FTimerHandle TimerAbilityActive;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
+	USoundBase* ShieldActivate;
 
 private:
 

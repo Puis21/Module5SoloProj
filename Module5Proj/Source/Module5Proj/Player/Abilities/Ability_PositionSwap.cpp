@@ -81,11 +81,15 @@ void UAbility_PositionSwap::AbilityUsed()
 
        if (AAI_Character* HitMarkerCast = Cast<AAI_Character>(Hit.GetActor()))
         {
-            FVector EnemyPos = HitMarkerCast->GetActorLocation();
-            HitMarkerCast->SetActorLocation(PlayerLoc);
-            m_ACPlayerCharacter->TeleportTo(EnemyPos, FRotator::ZeroRotator, false, false);
-            m_ACPlayerCharacter->AddControllerYawInput(m_ACPlayerCharacter->GetActorRotation().Yaw + 360.f);
-            AbilityCancelled();
+       	if(m_fCurrentAbilitySize >= 5)
+			{
+				FVector EnemyPos = HitMarkerCast->GetActorLocation();
+				HitMarkerCast->SetActorLocation(PlayerLoc);
+				m_ACPlayerCharacter->TeleportTo(EnemyPos, FRotator::ZeroRotator, false, false);
+				m_ACPlayerCharacter->AddControllerYawInput(m_ACPlayerCharacter->GetActorRotation().Yaw + 360.f);
+				m_fCurrentAbilitySize -= 5.f;
+				AbilityCancelled();
+			}
         }
 
         if (bHit)

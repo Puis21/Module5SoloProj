@@ -156,7 +156,7 @@ void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("Dash", IE_Pressed, this, &APlayerCharacter::Dash);
 
 	// Bind fire event
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerCharacter::OnFire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerCharacter::OnHit);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerCharacter::MoveForward);
@@ -218,7 +218,7 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AA
 	}
 }
 
-void APlayerCharacter::OnFire()
+void APlayerCharacter::OnHit()
 {
 	// // try and fire a projectile
 	// if (ProjectileClass != nullptr)
@@ -242,13 +242,13 @@ void APlayerCharacter::OnFire()
 	// }
 	// Get the animation object for the arms mesh
 	UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
-	if (AnimInstance != nullptr && FireSound != nullptr && m_bCanAttack)
+	if (AnimInstance != nullptr && SwingSound != nullptr && m_bCanAttack)
 	{
 		//GetWorld()->GetTimerManager().SetTimer(TimerAttacks, this, &APlayerCharacter::DecreaseAbilitySize, m_fAbilityDecreaseRate, true);
 		m_bCanAttack = false;
-		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, SwingSound, GetActorLocation());
 		//UGameplayStatics::SpawnEmitterAttached(m_pShieldParticleSystem, GetMesh1P(), FName("ShieldSocket"), FVector::ZeroVector, FRotator::ZeroRotator, FVector(1.f, 1.f, 1.f), EAttachLocation::KeepWorldPosition, true);
-		AnimInstance->Montage_Play(FireAnimation, 1.f);
+		AnimInstance->Montage_Play(SwingAnimation, 1.f);
 	}
 }
 

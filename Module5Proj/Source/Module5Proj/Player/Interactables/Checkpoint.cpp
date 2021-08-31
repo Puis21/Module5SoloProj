@@ -50,7 +50,6 @@ void ACheckpoint::OnOverLapBegin(UPrimitiveComponent* OverlappedComponent, AActo
 			UPlayerSave* SaveGameInstance = Cast<UPlayerSave>(UGameplayStatics::CreateSaveGameObject(UPlayerSave::StaticClass()));
 			SaveGameInstance->SavePlayerPos(Player->GetActorLocation(), Player->GetActorRotation());
 			UGameplayStatics::SaveGameToSlot(SaveGameInstance, TEXT("Save Slot"), 0);
-			UE_LOG(LogTemp, Warning, TEXT("Checkpoint Set"));
 			Destroy();
 		}
 	}

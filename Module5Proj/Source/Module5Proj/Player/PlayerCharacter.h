@@ -66,14 +66,14 @@ public:
 
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
-		USoundBase* FireSound;
+		USoundBase* SwingSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
 		USoundBase* HitSound;
 
 	/** AnimMontage to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
-		UAnimMontage* FireAnimation;
+		UAnimMontage* SwingAnimation;
 
 protected:
 
@@ -103,7 +103,7 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
-	void OnFire();
+	void OnHit();
 
 	void OnSprint();
 
