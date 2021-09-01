@@ -2954,3 +2954,1373 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.09.01-21.54.12:514][517]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/FirstPersonExampleMap_Auto34AB97A1249EEA15DCA2C23921B45E923.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto3.umap'
 [2021.09.01-21.54.12:515][517]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.087
 [2021.09.01-21.54.12:515][517]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.087
+[2021.09.01-21.54.55:348][690]Candidate modules for hot reload:
+[2021.09.01-21.54.55:348][690]  Module5Proj
+[2021.09.01-21.54.55:348][690]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Module5Proj,7664 Module5ProjEditor Win64 Development -Project="C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject" "C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject"  -IgnoreJunk]
+[2021.09.01-21.54.55:350][690]Warning: Starting HotReload took  0.0s.
+[2021.09.01-21.55.08:584][967]CompilerResultsLog: New page: Compilation - Sep 1, 2021, 7:55:08 AM
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Puia\Documents\GitHub\Module5SoloProj).
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Building Module5ProjEditor...
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Building 4 actions with 16 processes...
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:   [1/4] Ability_PositionSwap.cpp
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:   [2/4] UE4Editor-Module5Proj-7664.lib
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7664.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7664.exp
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:   [3/4] UE4Editor-Module5Proj-7664.dll
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7664.suppressed.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7664.suppressed.exp
+[2021.09.01-21.55.08:585][967]CompilerResultsLog:   [4/4] Module5ProjEditor.target
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Total time in Parallel executor: 12.62 seconds
+[2021.09.01-21.55.08:585][967]CompilerResultsLog: Total execution time: 13.16 seconds
+[2021.09.01-21.55.08:585][967]LogMainFrame: MainFrame: Module compiling took 13.246 seconds
+[2021.09.01-21.55.08:679][967]LogClass: EMovementState HotReload.
+[2021.09.01-21.55.08:700][967]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'Module5Proj' in 0.0003 seconds. Added 28 classes and 11 folders.
+[2021.09.01-21.55.08:706][967]Display: HotReload successful (20 functions remapped  0 scriptstructs remapped)
+[2021.09.01-21.55.08:794][967]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0088 seconds. Added 3638 classes and 875 folders.
+[2021.09.01-21.55.08:794][967]Display: HotReload took 13.5s.
+[2021.09.01-21.55.13:111][348]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-21.55.13:118][348]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-21.55.13:118][348]PIE: New page: PIE session: FirstPersonExampleMap (Sep 1, 2021, 7:55:13 AM)
+[2021.09.01-21.55.13:118][348]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.09.01-21.55.13:127][348]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009164s)
+[2021.09.01-21.55.13:128][348]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.09.01-21.55.13:128][348]LogPlayLevel: PIE: World Init took: (0.000806s)
+[2021.09.01-21.55.13:128][348]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.010070s)
+[2021.09.01-21.55.13:225][348]LogUObjectHash: Compacting FUObjectHashTables data took   5.08ms
+[2021.09.01-21.55.13:229][348]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-21.55.13:229][348]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-21.55.13:229][348]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-21.55.13:229][348]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-21.55.13:233][348]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-21.55.13:247][348]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-21.55.13:248][348]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-21.55.13:248][348]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-21.55.13:248][348]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-21.55.13:248][348]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-21.55.13:248][348]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-21.55.13:248][348]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-21.55.13:264][348]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-21.55.13:264][348]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-21.55.13:264][348]LogInit: FAudioDevice initialized.
+[2021.09.01-21.55.13:264][348]LogAudio: Display: Audio Device (ID: 27) registered with world 'FirstPersonExampleMap'.
+[2021.09.01-21.55.13:274][348]LogLoad: Game class is 'BP_Gamemode_C'
+[2021.09.01-21.55.13:276][348]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.09.01-14.55.13
+[2021.09.01-21.55.13:277][348]LogWorld: Bringing up level for play took: 0.002839
+[2021.09.01-21.55.13:277][348]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2021.09.01-21.55.13:280][348]PIE: Server logged in
+[2021.09.01-21.55.13:281][348]PIE: Play in editor total start time 0.166 seconds.
+[2021.09.01-21.55.17:908][870]LogTemp: Warning: DED
+[2021.09.01-21.55.21:327][273]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=-1068.904 Y=199.407 Z=307.225] for [FirstPersonProjectile_C]
+[2021.09.01-21.55.22:269][386]LogTemp: Warning: DED
+[2021.09.01-21.55.27:607][ 10]LogNiagara: Niagara Effect stalled GT for 1.0809 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_0.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.27:780][ 31]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=-1059.077 Y=209.058 Z=314.875] for [FirstPersonProjectile_C]
+[2021.09.01-21.55.27:807][ 34]LogNiagara: Niagara Effect stalled GT for 1.2458 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_1.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.27:982][ 55]LogNiagara: Niagara Effect stalled GT for 1.1936 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_2.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.28:063][ 65]LogTemp: Warning: DED
+[2021.09.01-21.55.28:634][133]LogNiagara: Niagara Effect stalled GT for 1.1431 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_3.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.29:001][177]LogNiagara: Niagara Effect stalled GT for 1.5284 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_5.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.29:693][260]LogNiagara: Niagara Effect stalled GT for 1.2412 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_7.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.29:852][279]LogNiagara: Niagara Effect stalled GT for 1.714 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_8.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.30:018][299]LogNiagara: Niagara Effect stalled GT for 1.0174 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_9.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.30:703][379]LogNiagara: Niagara Effect stalled GT for 1.2065 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_10.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.30:712][380]LogNiagara: Niagara Effect stalled GT for 1.9631 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_11.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.31:459][468]LogTemp: Warning: DED
+[2021.09.01-21.55.32:719][617]LogTemp: Warning: DED
+[2021.09.01-21.55.33:354][693]LogNiagara: Niagara Effect stalled GT for 1.1735 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_16.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.40:319][510]LogNiagara: Niagara Effect stalled GT for 1.3282 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_25.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.43:589][895]LogNiagara: Niagara Effect stalled GT for 1.8944 ms. Component(NiagaraComponent /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonProjectile_C_28.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.55.48:968][523]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-21.55.48:968][523]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.09.01-21.55.48:968][523]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-21.55.48:968][523]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-21.55.48:980][523]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-21.55.48:989][523]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-21.55.49:013][523]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.01-21.55.49:020][523]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-21.55.49:021][523]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-21.55.49:038][523]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-21.55.49:062][523]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2021.09.01-21.55.49:100][524]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2021.09.01-21.55.50:937][705]Candidate modules for hot reload:
+[2021.09.01-21.55.50:937][705]  Module5Proj
+[2021.09.01-21.55.50:937][705]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Module5Proj,7180 Module5ProjEditor Win64 Development -Project="C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject" "C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject"  -IgnoreJunk]
+[2021.09.01-21.55.50:940][705]Warning: Starting HotReload took  0.0s.
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: New page: Compilation - Sep 1, 2021, 7:55:52 AM
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Puia\Documents\GitHub\Module5SoloProj).
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Building Module5ProjEditor...
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Building 3 actions with 16 processes...
+[2021.09.01-21.55.52:398][823]CompilerResultsLog:   [1/3] UE4Editor-Module5Proj-7180.lib
+[2021.09.01-21.55.52:398][823]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7180.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7180.exp
+[2021.09.01-21.55.52:398][823]CompilerResultsLog:   [2/3] UE4Editor-Module5Proj-7180.dll
+[2021.09.01-21.55.52:398][823]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7180.suppressed.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-7180.suppressed.exp
+[2021.09.01-21.55.52:398][823]CompilerResultsLog:   [3/3] Module5ProjEditor.target
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Total time in Parallel executor: 0.85 seconds
+[2021.09.01-21.55.52:398][823]CompilerResultsLog: Total execution time: 1.39 seconds
+[2021.09.01-21.55.52:398][823]LogMainFrame: MainFrame: Module compiling took 1.469 seconds
+[2021.09.01-21.55.52:477][823]LogClass: EMovementState HotReload.
+[2021.09.01-21.55.52:494][823]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'Module5Proj' in 0.0004 seconds. Added 28 classes and 11 folders.
+[2021.09.01-21.55.52:499][823]Display: HotReload successful (20 functions remapped  0 scriptstructs remapped)
+[2021.09.01-21.55.52:570][823]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0084 seconds. Added 3638 classes and 875 folders.
+[2021.09.01-21.55.52:570][823]Display: HotReload took  1.6s.
+[2021.09.01-21.56.38:478][239]LogUObjectHash: Compacting FUObjectHashTables data took   4.67ms
+[2021.09.01-21.56.39:955][239]LogSlate: Window 'Save Content' being destroyed
+[2021.09.01-21.56.40:038][239]LogUObjectHash: Compacting FUObjectHashTables data took   3.24ms
+[2021.09.01-21.56.40:054][239]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/FirstPersonExampleMapB64DC1DD410C2CCBD106BEBCDD9DAA7B.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2021.09.01-21.56.40:062][239]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 0.074
+[2021.09.01-21.56.40:145][239]LogLinker: Warning: [AssetLog] C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Content\Maps\TestMapSave.umap: Failed to load '/Game/Maps/TestMapSave_BuiltData': Can't find file.
+[2021.09.01-21.56.40:146][239]LogLinker: Warning: [AssetLog] C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Content\Maps\TestMapSave.umap: Failed to load '/Game/Maps/TestMapSave_BuiltData': Can't find file.
+[2021.09.01-21.56.40:234][239]LogLinker: Warning: [AssetLog] C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Content\Maps\TestMapSave.umap: Failed to load '/Game/Maps/TestMapSave_BuiltData': Can't find file.
+[2021.09.01-21.56.40:260][239]LogLinker: Warning: [AssetLog] C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Content\Maps\TestMapSave.umap: Failed to load '/Game/Maps/TestMapSave_BuiltData': Can't find file.
+[2021.09.01-21.56.40:260][239]LoadErrors: Failed to load /Game/Maps/TestMapSave_BuiltData.TestMapSave_BuiltData Referenced by PersistentLevel
+[2021.09.01-21.56.40:352][239]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Maps/TestMapSave.TestMapSave
+[2021.09.01-21.56.40:352][239]Cmd: MAP LOAD FILE="../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Maps/TestMapSave.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.09.01-21.56.40:352][239]LightingResults: New page: Lighting Build
+[2021.09.01-21.56.40:352][239]LoadErrors: New page: Loading map: TestMapSave.umap
+[2021.09.01-21.56.40:386][239]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-21.56.40:386][239]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-21.56.40:387][239]MapCheck: New page: Map Check
+[2021.09.01-21.56.40:387][239]LightingResults: New page: Lighting Build
+[2021.09.01-21.56.40:410][239]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.01-21.56.40:417][239]LogUObjectHash: Compacting FUObjectHashTables data took   3.19ms
+[2021.09.01-21.56.40:419][239]LogAudio: Display: Audio Device (ID: 1) registered with world 'TestMapSave'.
+[2021.09.01-21.56.40:530][239]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.09.01-21.56.40:530][239]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-21.56.40:558][239]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2021.09.01-21.56.40:564][239]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.09.01-21.56.40:564][239]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.193ms to complete.
+[2021.09.01-21.56.40:564][239]LogFileHelpers: Loading map 'TestMapSave' took 0.213
+[2021.09.01-21.56.40:578][239]AssetCheck: New page: Asset Save: FirstPersonExampleMap
+[2021.09.01-21.56.40:578][239]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.09.01-21.56.51:033][409]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_BoxCentered2)
+[2021.09.01-21.56.52:527][563]Cmd: DELETE
+[2021.09.01-21.56.52:527][563]Cmd: ACTOR DELETE
+[2021.09.01-21.56.52:533][563]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.09.01-21.56.52:558][563]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.09.01-21.56.52:567][563]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2021.09.01-21.57.59:455][174]Cmd: DELETE
+[2021.09.01-21.57.59:455][174]Cmd: ACTOR DELETE
+[2021.09.01-21.57.59:458][174]LogEditorActor: Deleted Actor: BP_KillZone_C
+[2021.09.01-21.57.59:484][174]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2021.09.01-21.57.59:492][174]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2021.09.01-21.58.16:502][ 17]Cmd: EDIT COPY
+[2021.09.01-21.58.16:790][ 40]Cmd: EDIT PASTE
+[2021.09.01-21.58.46:038][172]Cmd: EDIT COPY
+[2021.09.01-21.58.46:237][195]Cmd: EDIT PASTE
+[2021.09.01-21.59.12:301][ 76]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-21.59.12:308][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-21.59.12:309][ 76]PIE: New page: PIE session: TestMapSave (Sep 1, 2021, 7:59:12 AM)
+[2021.09.01-21.59.12:309][ 76]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-21.59.12:317][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009076s)
+[2021.09.01-21.59.12:318][ 76]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-21.59.12:318][ 76]LogPlayLevel: PIE: World Init took: (0.000785s)
+[2021.09.01-21.59.12:318][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMapSave.TestMapSave to /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave (0.009976s)
+[2021.09.01-21.59.12:346][ 76]LogUObjectHash: Compacting FUObjectHashTables data took   2.99ms
+[2021.09.01-21.59.12:356][ 76]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-21.59.12:356][ 76]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-21.59.12:356][ 76]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-21.59.12:357][ 76]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-21.59.12:357][ 76]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-21.59.12:360][ 76]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-21.59.12:373][ 76]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-21.59.12:374][ 76]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-21.59.12:390][ 76]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-21.59.12:390][ 76]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-21.59.12:390][ 76]LogInit: FAudioDevice initialized.
+[2021.09.01-21.59.12:390][ 76]LogAudio: Display: Audio Device (ID: 28) registered with world 'TestMapSave'.
+[2021.09.01-21.59.12:400][ 76]LogLoad: Game class is 'Module5ProjGameMode'
+[2021.09.01-21.59.12:406][ 76]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave up for play (max tick rate 0) at 2021.09.01-14.59.12
+[2021.09.01-21.59.12:407][ 76]LogWorld: Bringing up level for play took: 0.006871
+[2021.09.01-21.59.12:408][ 76]LogOnline: OSS: Creating online subsystem instance for: :Context_47
+[2021.09.01-21.59.12:410][ 76]PIE: Server logged in
+[2021.09.01-21.59.12:411][ 76]PIE: Play in editor total start time 0.105 seconds.
+[2021.09.01-21.59.29:450][ 78]LogTemp: Warning: DED
+[2021.09.01-21.59.31:009][259]LogTemp: Warning: DED
+[2021.09.01-21.59.36:230][874]LogTemp: Warning: DED
+[2021.09.01-21.59.36:230][874]LogTemp: Warning: DED
+[2021.09.01-21.59.37:116][980]LogTemp: Warning: DED
+[2021.09.01-21.59.38:000][ 86]LogTemp: Warning: DED
+[2021.09.01-21.59.44:445][815]LogNiagara: Niagara Effect stalled GT for 1.2041 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_3.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.59.45:462][937]LogNiagara: Niagara Effect stalled GT for 1.1676 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_4.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.59.48:197][263]LogTemp: Warning: DED
+[2021.09.01-21.59.49:507][407]LogTemp: Warning: DED
+[2021.09.01-21.59.54:186][966]LogTemp: Warning: DED
+[2021.09.01-21.59.59:082][550]LogNiagara: Niagara Effect stalled GT for 2.0047 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_9.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-21.59.59:548][606]LogNiagara: Niagara Effect stalled GT for 1.3662 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_10.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.01:467][836]LogTemp: Warning: DED
+[2021.09.01-22.00.02:002][897]LogNiagara: Niagara Effect stalled GT for 1.1054 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_13.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.02:126][912]LogTemp: Warning: DED
+[2021.09.01-22.00.02:478][954]LogNiagara: Niagara Effect stalled GT for 1.6824 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_14.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.03:194][ 40]LogTemp: Warning: DED
+[2021.09.01-22.00.03:504][ 76]LogNiagara: Niagara Effect stalled GT for 1.6631 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_16.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.05:220][280]LogTemp: Warning: DED
+[2021.09.01-22.00.05:571][322]LogNiagara: Niagara Effect stalled GT for 1.2626 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_17.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.05:922][364]LogNiagara: Niagara Effect stalled GT for 1.5102 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_18.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.06:589][444]LogNiagara: Niagara Effect stalled GT for 1.9244 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_19.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.08:783][706]LogNiagara: Niagara Effect stalled GT for 1.5939 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_21.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.09:800][821]LogNiagara: Niagara Effect stalled GT for 1.2797 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_22.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.11:993][ 83]LogNiagara: Niagara Effect stalled GT for 1.1155 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_23.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.24:300][546]LogTemp: Warning: DED
+[2021.09.01-22.00.28:913][ 95]LogTemp: Warning: DED
+[2021.09.01-22.00.33:978][689]LogNiagara: Niagara Effect stalled GT for 1.9076 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_30.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.36:984][ 46]LogNiagara: Niagara Effect stalled GT for 1.5773 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_33.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.37:033][ 52]LogNiagara: Niagara Effect stalled GT for 1.1558 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_34.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.38:000][168]LogNiagara: Niagara Effect stalled GT for 1.6244 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_35.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.38:050][174]LogNiagara: Niagara Effect stalled GT for 1.522 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_37.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.40:934][520]LogNiagara: Niagara Effect stalled GT for 1.21 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_39.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.40:968][524]LogNiagara: Niagara Effect stalled GT for 1.6099 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_40.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.41:969][638]LogNiagara: Niagara Effect stalled GT for 1.8462 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_41.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.41:992][641]LogNiagara: Niagara Effect stalled GT for 1.1444 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_43.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.42:986][752]LogNiagara: Niagara Effect stalled GT for 1.8475 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_45.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.43:018][756]LogNiagara: Niagara Effect stalled GT for 1.1307 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_46.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.44:002][874]LogNiagara: Niagara Effect stalled GT for 1.2259 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_47.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.44:036][878]LogNiagara: Niagara Effect stalled GT for 1.2015 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_49.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.46:879][219]LogTemp: Warning: DED
+[2021.09.01-22.00.56:130][313]LogNiagara: Niagara Effect stalled GT for 1.7724 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_54.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.56:146][315]LogNiagara: Niagara Effect stalled GT for 1.2041 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_55.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.56:544][363]LogTemp: Warning: DED
+[2021.09.01-22.00.57:154][436]LogNiagara: Niagara Effect stalled GT for 1.3971 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_56.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.00.57:173][438]LogNiagara: Niagara Effect stalled GT for 1.6542 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_57.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.01:278][926]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.01.01:278][926]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.01.01:278][926]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-22.01.01:278][926]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.01.01:284][926]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-22.01.01:303][926]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.01.01:325][926]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.01-22.01.01:326][926]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.01.01:327][926]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.01.01:345][926]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.01.01:350][926]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2021.09.01-22.01.01:396][927]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2021.09.01-22.01.02:364][ 16]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-22.01.02:370][ 16]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-22.01.02:370][ 16]PIE: New page: PIE session: TestMapSave (Sep 1, 2021, 8:01:02 AM)
+[2021.09.01-22.01.02:404][ 16]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.01.02:413][ 16]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008598s)
+[2021.09.01-22.01.02:413][ 16]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-22.01.02:414][ 16]LogPlayLevel: PIE: World Init took: (0.000757s)
+[2021.09.01-22.01.02:414][ 16]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMapSave.TestMapSave to /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave (0.009509s)
+[2021.09.01-22.01.02:439][ 16]LogUObjectHash: Compacting FUObjectHashTables data took   3.08ms
+[2021.09.01-22.01.02:440][ 16]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-22.01.02:440][ 16]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-22.01.02:440][ 16]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-22.01.02:440][ 16]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-22.01.02:441][ 16]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-22.01.02:444][ 16]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-22.01.02:457][ 16]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-22.01.02:457][ 16]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-22.01.02:457][ 16]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-22.01.02:457][ 16]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-22.01.02:458][ 16]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-22.01.02:458][ 16]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-22.01.02:458][ 16]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-22.01.02:473][ 16]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-22.01.02:473][ 16]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-22.01.02:473][ 16]LogInit: FAudioDevice initialized.
+[2021.09.01-22.01.02:473][ 16]LogAudio: Display: Audio Device (ID: 29) registered with world 'TestMapSave'.
+[2021.09.01-22.01.02:481][ 16]LogLoad: Game class is 'Module5ProjGameMode'
+[2021.09.01-22.01.02:486][ 16]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave up for play (max tick rate 0) at 2021.09.01-15.01.02
+[2021.09.01-22.01.02:487][ 16]LogWorld: Bringing up level for play took: 0.006343
+[2021.09.01-22.01.02:487][ 16]LogOnline: OSS: Creating online subsystem instance for: :Context_48
+[2021.09.01-22.01.02:490][ 16]PIE: Server logged in
+[2021.09.01-22.01.02:491][ 16]PIE: Play in editor total start time 0.123 seconds.
+[2021.09.01-22.01.32:286][517]LogNiagara: Niagara Effect stalled GT for 1.927 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_0.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.34:194][746]LogNiagara: Niagara Effect stalled GT for 1.4086 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_1.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.40:765][520]LogTemp: Warning: DED
+[2021.09.01-22.01.43:536][837]LogNiagara: Niagara Effect stalled GT for 1.1754 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_4.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.44:802][989]LogNiagara: Niagara Effect stalled GT for 1.0133 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_5.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.46:038][136]LogNiagara: Niagara Effect stalled GT for 1.4916 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_6.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.47:230][279]LogNiagara: Niagara Effect stalled GT for 1.4899 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_7.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.47:463][307]LogTemp: Warning: DED
+[2021.09.01-22.01.47:704][336]LogTemp: Warning: DED
+[2021.09.01-22.01.48:247][400]LogNiagara: Niagara Effect stalled GT for 1.1396 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_8.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.48:771][460]LogTemp: Warning: DED
+[2021.09.01-22.01.49:274][516]LogNiagara: Niagara Effect stalled GT for 1.4337 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_9.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.51:316][760]LogNiagara: Niagara Effect stalled GT for 1.0936 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_11.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.53:335][  2]LogNiagara: Niagara Effect stalled GT for 1.8405 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_13.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.56:689][399]LogNiagara: Niagara Effect stalled GT for 1.9003 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_15.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.01.57:714][522]LogNiagara: Niagara Effect stalled GT for 1.6533 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_16.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.02:692][115]LogNiagara: Niagara Effect stalled GT for 1.437 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_19.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.03:709][237]LogNiagara: Niagara Effect stalled GT for 1.3287 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_20.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.21:066][305]LogNiagara: Niagara Effect stalled GT for 1.5188 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_22.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.29:673][323]LogNiagara: Niagara Effect stalled GT for 1.1482 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_28.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.31:134][492]LogNiagara: Niagara Effect stalled GT for 1.0545 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_29.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.02.46:117][276]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.02.46:117][276]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.02.46:118][276]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-22.02.46:118][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.02.46:129][276]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-22.02.46:150][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.02.46:172][276]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.02.46:173][276]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.02.46:174][276]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.02.46:196][276]LogUObjectHash: Compacting FUObjectHashTables data took   3.58ms
+[2021.09.01-22.02.46:236][277]LogPlayLevel: Display: Destroying online subsystem :Context_48
+[2021.09.01-22.03.14:426][429]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.03.17:129][716]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.03.18:052][793]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box72)
+[2021.09.01-22.03.21:019][ 96]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box71)
+[2021.09.01-22.03.22:522][230]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.03.24:931][416]Cmd: EDIT COPY
+[2021.09.01-22.03.25:165][428]Cmd: EDIT PASTE
+[2021.09.01-22.03.31:372][ 62]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.31:372][ 62]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.03.31:433][ 62]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.31:912][ 81]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.31:912][ 81]LogEditorTransaction: Undo Paste
+[2021.09.01-22.03.31:990][ 81]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.32:494][112]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.32:494][112]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.32:565][112]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.34:273][243]LogEditorViewport: Clicking Background
+[2021.09.01-22.03.36:694][437]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.03.37:155][467]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box94)
+[2021.09.01-22.03.37:753][533]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box72)
+[2021.09.01-22.03.38:119][572]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.03.42:825][ 77]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.03.43:069][101]Cmd: DUPLICATE
+[2021.09.01-22.03.43:069][101]Cmd: ACTOR DUPLICATE
+[2021.09.01-22.03.45:302][320]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box94)
+[2021.09.01-22.03.45:809][376]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.03.48:542][672]Cmd: EDIT COPY
+[2021.09.01-22.03.49:283][760]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.49:283][760]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.03.49:347][760]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.50:144][812]Cmd: EDIT COPY
+[2021.09.01-22.03.50:298][827]Cmd: EDIT PASTE
+[2021.09.01-22.03.54:549][250]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.54:549][250]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.03.54:633][250]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.55:068][262]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.55:068][262]LogEditorTransaction: Undo Paste
+[2021.09.01-22.03.55:139][262]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.55:457][274]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.55:458][274]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.55:525][274]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.55:952][307]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.55:952][307]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.56:021][307]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.56:291][329]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.56:291][329]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.56:360][329]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.56:555][343]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.56:555][343]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.03.56:637][343]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.56:842][344]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.56:842][344]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.56:910][344]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.03.56:989][346]Cmd: TRANSACTION UNDO
+[2021.09.01-22.03.56:989][346]LogEditorTransaction: Undo Clicking on Actors
+[2021.09.01-22.03.57:056][346]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.01:051][714]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.01:051][714]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.04.01:112][714]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.02:705][809]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.07:744][365]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.04.08:357][431]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box72)
+[2021.09.01-22.04.09:756][564]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.10:441][616]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box94)
+[2021.09.01-22.04.15:530][139]Cmd: EDIT COPY
+[2021.09.01-22.04.15:689][158]Cmd: EDIT PASTE
+[2021.09.01-22.04.20:099][575]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.20:099][575]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.04.20:161][575]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.20:895][609]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.20:895][609]LogEditorTransaction: Undo Paste
+[2021.09.01-22.04.20:982][609]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.24:448][871]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.24:448][871]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.04.24:521][871]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.25:099][905]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box9)
+[2021.09.01-22.04.26:282][979]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.27:566][ 72]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.28:324][135]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.04.29:628][245]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.31:872][476]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.31:949][483]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.32:832][587]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.33:498][658]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.04.33:999][713]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box94)
+[2021.09.01-22.04.34:515][767]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box72)
+[2021.09.01-22.04.36:374][972]Cmd: EDIT COPY
+[2021.09.01-22.04.36:558][986]Cmd: EDIT PASTE
+[2021.09.01-22.04.39:006][199]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.39:006][199]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.04.39:067][199]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.39:426][216]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.39:426][216]LogEditorTransaction: Undo Paste
+[2021.09.01-22.04.39:497][216]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.41:813][393]Cmd: TRANSACTION UNDO
+[2021.09.01-22.04.41:813][393]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.04.41:886][393]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.04.44:798][633]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.46:191][765]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box8)
+[2021.09.01-22.04.49:155][ 74]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.50:136][177]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.50:375][204]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.50:427][208]LogEditorViewport: Clicking Background
+[2021.09.01-22.04.53:233][497]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box94)
+[2021.09.01-22.04.54:235][601]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box69)
+[2021.09.01-22.04.54:849][669]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box68)
+[2021.09.01-22.04.55:521][744]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box72)
+[2021.09.01-22.04.56:634][869]Cmd: EDIT COPY
+[2021.09.01-22.04.56:826][891]Cmd: EDIT PASTE
+[2021.09.01-22.05.57:311][668]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box100)
+[2021.09.01-22.06.02:855][295]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box99)
+[2021.09.01-22.06.16:090][821]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box101)
+[2021.09.01-22.06.31:187][502]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box99)
+[2021.09.01-22.06.33:541][734]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box102)
+[2021.09.01-22.06.34:305][819]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box101)
+[2021.09.01-22.06.34:689][861]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box100)
+[2021.09.01-22.06.41:960][716]LogEditorViewport: Clicking Background
+[2021.09.01-22.06.45:842][133]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box99)
+[2021.09.01-22.06.48:934][496]LogEditorViewport: Clicking Background
+[2021.09.01-22.06.58:449][577]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box101)
+[2021.09.01-22.07.01:017][862]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box102)
+[2021.09.01-22.07.09:320][742]Cmd: TRANSACTION UNDO
+[2021.09.01-22.07.09:320][742]LogEditorTransaction: Undo Scale Actors
+[2021.09.01-22.07.09:382][742]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.07.09:705][758]Cmd: TRANSACTION UNDO
+[2021.09.01-22.07.09:705][758]LogEditorTransaction: Undo Scale Actors
+[2021.09.01-22.07.09:767][758]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.07.17:030][473]LogEditorViewport: Clicking Background
+[2021.09.01-22.07.25:244][436]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box102)
+[2021.09.01-22.08.06:383][149]LogEditorViewport: Clicking Background
+[2021.09.01-22.08.13:060][896]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box101)
+[2021.09.01-22.08.13:722][968]Cmd: EDIT COPY
+[2021.09.01-22.08.13:930][993]Cmd: EDIT PASTE
+[2021.09.01-22.08.25:526][313]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box103)
+[2021.09.01-22.08.40:783][898]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box101)
+[2021.09.01-22.09.09:820][321]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box13)
+[2021.09.01-22.09.10:004][338]Cmd: EDIT COPY
+[2021.09.01-22.09.10:187][360]Cmd: EDIT PASTE
+[2021.09.01-22.09.17:715][190]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box21)
+[2021.09.01-22.09.18:591][270]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box21)
+[2021.09.01-22.09.19:249][332]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box21)
+[2021.09.01-22.09.19:722][386]Cmd: EDIT COPY
+[2021.09.01-22.09.19:897][407]Cmd: EDIT PASTE
+[2021.09.01-22.09.27:485][291]Cmd: EDIT COPY
+[2021.09.01-22.09.27:667][309]Cmd: EDIT PASTE
+[2021.09.01-22.09.37:071][329]Cmd: EDIT COPY
+[2021.09.01-22.09.37:241][344]Cmd: EDIT PASTE
+[2021.09.01-22.10.03:869][230]LogEditorViewport: Clicking Background
+[2021.09.01-22.10.10:033][956]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box105)
+[2021.09.01-22.10.18:581][941]Cmd: EDIT COPY
+[2021.09.01-22.10.18:807][968]Cmd: EDIT PASTE
+[2021.09.01-22.10.26:339][834]Cmd: EDIT COPY
+[2021.09.01-22.10.26:515][854]Cmd: EDIT PASTE
+[2021.09.01-22.10.51:411][683]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box106)
+[2021.09.01-22.10.52:186][768]Cmd: EDIT COPY
+[2021.09.01-22.10.52:728][832]Cmd: EDIT PASTE
+[2021.09.01-22.10.55:229][118]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box109)
+[2021.09.01-22.11.48:175][539]LogUObjectHash: Compacting FUObjectHashTables data took   4.77ms
+[2021.09.01-22.11.48:214][539]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/TestMapSave_Auto4F97C16354F3E2B396A98748961E9AF15.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Autosaves/Game/Maps/TestMapSave_Auto4.umap'
+[2021.09.01-22.11.48:215][539]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/TestMapSave' took 0.114
+[2021.09.01-22.11.48:215][539]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.114
+[2021.09.01-22.12.18:358][981]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box109)
+[2021.09.01-22.13.00:690][804]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box109)
+[2021.09.01-22.13.01:032][843]Cmd: EDIT COPY
+[2021.09.01-22.13.01:227][866]Cmd: EDIT PASTE
+[2021.09.01-22.13.21:615][ 60]Cmd: EDIT COPY
+[2021.09.01-22.13.21:788][ 76]Cmd: EDIT PASTE
+[2021.09.01-22.13.26:229][519]Cmd: EDIT COPY
+[2021.09.01-22.13.26:420][538]Cmd: EDIT PASTE
+[2021.09.01-22.13.38:754][848]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box111)
+[2021.09.01-22.13.48:309][843]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box110)
+[2021.09.01-22.13.52:551][292]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box111)
+[2021.09.01-22.13.58:402][909]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box112)
+[2021.09.01-22.14.03:977][515]Cmd: EDIT COPY
+[2021.09.01-22.14.04:268][547]Cmd: EDIT PASTE
+[2021.09.01-22.14.41:417][846]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box112)
+[2021.09.01-22.14.42:881][979]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.16.02:978][864]Cmd: EDIT COPY
+[2021.09.01-22.16.03:168][884]Cmd: EDIT PASTE
+[2021.09.01-22.16.05:858][191]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.16.07:080][327]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.16.09:705][623]Cmd: EDIT COPY
+[2021.09.01-22.16.09:906][646]Cmd: EDIT PASTE
+[2021.09.01-22.16.14:797][191]Cmd: TRANSACTION UNDO
+[2021.09.01-22.16.14:797][191]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.16.14:862][191]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.16.15:562][224]Cmd: TRANSACTION UNDO
+[2021.09.01-22.16.15:562][224]LogEditorTransaction: Undo Paste
+[2021.09.01-22.16.15:645][224]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.16.16:193][257]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.16.25:934][288]LogEditorViewport: Clicking Background
+[2021.09.01-22.16.26:173][315]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.16.27:947][472]Cmd: TRANSACTION UNDO
+[2021.09.01-22.16.27:947][472]LogEditorTransaction: Undo Set Rotation
+[2021.09.01-22.16.28:007][472]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.16.46:545][500]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.16.46:944][530]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.16.49:422][809]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.16.49:905][862]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.16.50:411][919]Cmd: EDIT COPY
+[2021.09.01-22.16.50:607][942]Cmd: EDIT PASTE
+[2021.09.01-22.17.12:825][508]Cmd: EDIT COPY
+[2021.09.01-22.17.14:709][718]Cmd: EDIT PASTE
+[2021.09.01-22.17.19:908][321]LogEditorViewport: Clicking Background
+[2021.09.01-22.17.26:705][ 61]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.17.27:376][133]Cmd: EDIT COPY
+[2021.09.01-22.17.27:568][156]Cmd: EDIT PASTE
+[2021.09.01-22.18.19:628][141]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.18.20:097][193]Cmd: EDIT COPY
+[2021.09.01-22.18.20:279][214]Cmd: EDIT PASTE
+[2021.09.01-22.18.52:560][856]Cmd: EDIT COPY
+[2021.09.01-22.18.52:736][877]Cmd: EDIT PASTE
+[2021.09.01-22.19.02:328][886]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box117)
+[2021.09.01-22.21.31:094][835]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\Puia\Downloads\Flair.fbx)
+[2021.09.01-22.21.31:116][835]LogFbx: Loading FBX Scene from C:\Users\Puia\Downloads\Flair.fbx
+[2021.09.01-22.21.31:130][835]LogFbx: FBX Scene Loaded Succesfully
+[2021.09.01-22.21.32:484][835]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(0) Hips
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(1) Spine
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(2) Spine1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(3) Spine2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(4) Neck
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(5) Head
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(6) HeadTop_End
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(7) LeftShoulder
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(8) LeftArm
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(9) LeftForeArm
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(10) LeftHand
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(23) RightShoulder
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(24) RightArm
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(25) RightForeArm
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(26) RightHand
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(27) RightHandThumb1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(28) RightHandThumb2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(29) RightHandThumb3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(30) RightHandThumb4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(31) RightHandIndex1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(32) RightHandIndex2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(33) RightHandIndex3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(34) RightHandIndex4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(35) RightHandMiddle1
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(36) RightHandMiddle2
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(37) RightHandMiddle3
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(38) RightHandMiddle4
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(39) LeftUpLeg
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(40) LeftLeg
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(41) LeftFoot
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(42) LeftToeBase
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(43) LeftToe_End
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(44) RightUpLeg
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(45) RightLeg
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(46) RightFoot
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(47) RightToeBase
+[2021.09.01-22.21.32:499][835]LogFbx: SortedLinks :(48) RightToe_End
+[2021.09.01-22.21.32:500][835]LogFbx: Parsing AnimStack mixamo.com
+[2021.09.01-22.21.34:207][835]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/AI/Imported_Character/Flair.Flair
+[2021.09.01-22.21.34:207][835]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/AI/Imported_Character/Flair.Flair
+[2021.09.01-22.21.46:359][ 84]Cmd: ACTOR SELECT ALL
+[2021.09.01-22.21.47:282][133]LogEditorViewport: Clicking Background
+[2021.09.01-22.22.03:201][997]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (Flair)
+[2021.09.01-22.22.11:550][969]Cmd: EDIT COPY
+[2021.09.01-22.22.11:715][988]Cmd: EDIT PASTE
+[2021.09.01-22.22.16:808][544]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (Flair)
+[2021.09.01-22.22.19:745][887]Cmd: EDIT COPY
+[2021.09.01-22.22.19:934][909]Cmd: EDIT PASTE
+[2021.09.01-22.22.26:913][715]Cmd: EDIT COPY
+[2021.09.01-22.22.27:081][723]Cmd: EDIT PASTE
+[2021.09.01-22.22.29:026][920]Cmd: EDIT COPY
+[2021.09.01-22.22.29:193][940]Cmd: EDIT PASTE
+[2021.09.01-22.22.32:178][285]Cmd: EDIT COPY
+[2021.09.01-22.22.32:330][303]Cmd: EDIT PASTE
+[2021.09.01-22.23.45:466][242]LogSlate: Window 'Color Picker' being destroyed
+[2021.09.01-22.23.47:269][428]LogEditorViewport: Clicking Background
+[2021.09.01-22.23.58:601][780]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box108)
+[2021.09.01-22.23.59:956][938]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box107)
+[2021.09.01-22.24.00:295][974]Cmd: EDIT COPY
+[2021.09.01-22.24.00:823][ 37]Cmd: EDIT PASTE
+[2021.09.01-22.25.11:872][197]LogEditorViewport: Clicking Background
+[2021.09.01-22.25.27:569][ 48]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.25.50:066][610]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.25.50:748][689]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.25.51:271][749]Cmd: EDIT COPY
+[2021.09.01-22.25.51:480][773]Cmd: EDIT PASTE
+[2021.09.01-22.26.42:856][664]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.27.08:834][683]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.27.26:486][664]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.27.27:459][766]Cmd: EDIT COPY
+[2021.09.01-22.27.27:659][789]Cmd: EDIT PASTE
+[2021.09.01-22.27.46:400][973]LogEditorViewport: Clicking Background
+[2021.09.01-22.27.51:233][530]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.27.51:686][575]Cmd: EDIT COPY
+[2021.09.01-22.27.51:881][598]Cmd: EDIT PASTE
+[2021.09.01-22.28.43:047][410]LogEditorViewport: Clicking Background
+[2021.09.01-22.28.46:730][827]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.28.49:816][163]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.28.51:153][302]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.28.53:368][522]LogEditorViewport: Clicking Background
+[2021.09.01-22.28.54:504][647]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.28.58:373][ 25]LogEditorViewport: Clicking Background
+[2021.09.01-22.28.59:602][153]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.29.03:162][531]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box122)
+[2021.09.01-22.29.03:938][618]LogEditorViewport: Clicking Background
+[2021.09.01-22.29.07:100][978]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.29.10:975][380]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.29.13:549][682]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.29.16:403][ 17]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box123)
+[2021.09.01-22.29.19:021][322]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.29.25:338][  3]LogEditorViewport: Clicking Background
+[2021.09.01-22.29.29:013][412]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.29.29:225][429]Cmd: EDIT COPY
+[2021.09.01-22.29.29:409][451]Cmd: EDIT PASTE
+[2021.09.01-22.29.53:504][194]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.29.53:761][218]Cmd: EDIT COPY
+[2021.09.01-22.29.53:954][233]Cmd: EDIT PASTE
+[2021.09.01-22.30.03:142][320]Cmd: ACTOR SELECT ALL
+[2021.09.01-22.30.05:509][564]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box125)
+[2021.09.01-22.31.24:785][637]LogEditorViewport: Clicking Background
+[2021.09.01-22.31.26:119][774]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.31.27:376][913]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box125)
+[2021.09.01-22.31.31:098][292]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.31.35:232][764]LogEditorViewport: Clicking Background
+[2021.09.01-22.31.35:782][829]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box120)
+[2021.09.01-22.31.36:537][913]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.31.37:126][979]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box122)
+[2021.09.01-22.31.37:583][ 29]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box124)
+[2021.09.01-22.31.39:147][211]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box125)
+[2021.09.01-22.32.02:195][889]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box21)
+[2021.09.01-22.32.02:663][924]Cmd: EDIT COPY
+[2021.09.01-22.32.02:862][946]Cmd: EDIT PASTE
+[2021.09.01-22.32.59:681][279]Cmd: SELECT NONE
+[2021.09.01-22.33.14:922][811]Cmd: SELECT NONE
+[2021.09.01-22.33.47:543][482]Cmd: TRANSACTION UNDO
+[2021.09.01-22.33.47:543][482]LogEditorTransaction: Undo Scale Actors
+[2021.09.01-22.33.47:615][482]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.33.53:694][136]Cmd: TRANSACTION UNDO
+[2021.09.01-22.33.53:694][136]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.33.53:757][136]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.34.15:265][493]LogUObjectHash: Compacting FUObjectHashTables data took   4.64ms
+[2021.09.01-22.34.15:317][493]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/TestMapSave286C619840BB2B2AA727769DEBE493CB.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Maps/TestMapSave.umap'
+[2021.09.01-22.34.15:349][493]AssetCheck: New page: Asset Save: TestMapSave
+[2021.09.01-22.34.15:349][493]LogContentValidation: Display: Validating World /Game/Maps/TestMapSave.TestMapSave
+[2021.09.01-22.34.35:486][645]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box75)
+[2021.09.01-22.34.37:495][854]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box76)
+[2021.09.01-22.34.39:405][ 75]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box124)
+[2021.09.01-22.35.02:084][299]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box117)
+[2021.09.01-22.35.14:638][770]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box117)
+[2021.09.01-22.35.15:228][815]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box113)
+[2021.09.01-22.35.16:129][917]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box119)
+[2021.09.01-22.35.17:597][ 65]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box114)
+[2021.09.01-22.35.18:070][ 93]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (SuperGrid_Box116)
+[2021.09.01-22.35.19:437][248]LogEditorViewport: Clicking Background
+[2021.09.01-22.35.39:841][645]LogEditorViewport: Clicking on Actor (LMB): BP_AbilityPickUp_C (BP_AbilityPickUp4)
+[2021.09.01-22.35.40:109][670]Cmd: EDIT COPY
+[2021.09.01-22.35.40:305][692]Cmd: EDIT PASTE
+[2021.09.01-22.35.51:181][823]LogEditorViewport: Clicking Background
+[2021.09.01-22.36.01:337][942]Cmd: EDIT COPY
+[2021.09.01-22.36.01:532][963]Cmd: EDIT PASTE
+[2021.09.01-22.36.08:994][751]Cmd: EDIT COPY
+[2021.09.01-22.36.09:174][771]Cmd: EDIT PASTE
+[2021.09.01-22.36.13:059][179]Cmd: EDIT COPY
+[2021.09.01-22.36.13:226][193]Cmd: EDIT PASTE
+[2021.09.01-22.36.15:620][422]Cmd: EDIT COPY
+[2021.09.01-22.36.15:637][424]Cmd: EDIT PASTE
+[2021.09.01-22.36.15:942][451]Cmd: EDIT PASTE
+[2021.09.01-22.36.18:185][695]Cmd: EDIT COPY
+[2021.09.01-22.36.18:371][704]Cmd: EDIT PASTE
+[2021.09.01-22.36.28:735][837]Cmd: EDIT COPY
+[2021.09.01-22.36.28:939][860]Cmd: EDIT PASTE
+[2021.09.01-22.36.31:624][146]Cmd: EDIT COPY
+[2021.09.01-22.36.31:800][156]Cmd: EDIT PASTE
+[2021.09.01-22.36.41:801][210]Cmd: EDIT COPY
+[2021.09.01-22.36.42:003][219]Cmd: EDIT PASTE
+[2021.09.01-22.36.50:647][120]Cmd: EDIT COPY
+[2021.09.01-22.36.50:814][140]Cmd: EDIT PASTE
+[2021.09.01-22.37.02:600][365]Cmd: EDIT COPY
+[2021.09.01-22.37.02:806][388]Cmd: EDIT PASTE
+[2021.09.01-22.37.15:605][650]Cmd: EDIT COPY
+[2021.09.01-22.37.15:936][682]Cmd: EDIT PASTE
+[2021.09.01-22.37.16:140][696]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box122)
+[2021.09.01-22.37.17:708][855]LogEditorViewport: Clicking on Actor (LMB): BP_AI_Character_C (BP_AI_Character21)
+[2021.09.01-22.37.17:927][869]Cmd: EDIT COPY
+[2021.09.01-22.37.18:874][980]Cmd: EDIT PASTE
+[2021.09.01-22.37.25:566][614]Cmd: TRANSACTION UNDO
+[2021.09.01-22.37.25:566][614]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.37.25:631][614]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.37.33:801][393]Cmd: EDIT COPY
+[2021.09.01-22.37.33:979][414]Cmd: EDIT PASTE
+[2021.09.01-22.37.51:189][185]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box117)
+[2021.09.01-22.37.52:129][290]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box115)
+[2021.09.01-22.37.52:646][347]Cmd: EDIT COPY
+[2021.09.01-22.37.52:837][370]Cmd: EDIT PASTE
+[2021.09.01-22.38.02:174][458]LogEditorViewport: Clicking on Actor (LMB): BP_AI_Character_C (BP_AI_Character24)
+[2021.09.01-22.38.14:068][776]LogEditorViewport: Clicking Background
+[2021.09.01-22.38.20:971][571]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box10)
+[2021.09.01-22.39.03:816][179]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box125)
+[2021.09.01-22.39.04:318][229]Cmd: EDIT COPY
+[2021.09.01-22.39.04:571][259]Cmd: EDIT PASTE
+[2021.09.01-22.39.55:794][898]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2021.09.01-22.39.55:967][912]Cmd: EDIT COPY
+[2021.09.01-22.39.56:164][931]Cmd: EDIT PASTE
+[2021.09.01-22.40.08:417][320]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2021.09.01-22.40.33:546][153]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.40.35:617][395]Cmd: EDIT COPY
+[2021.09.01-22.40.35:835][421]Cmd: EDIT PASTE
+[2021.09.01-22.42.58:649][785]Cmd: EDIT COPY
+[2021.09.01-22.42.58:822][793]Cmd: EDIT PASTE
+[2021.09.01-22.43.11:241][192]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box102)
+[2021.09.01-22.43.22:052][441]MapCheck: New page: Map Check
+[2021.09.01-22.43.22:074][441]Cmd: MAP REBUILD ALLVISIBLE
+[2021.09.01-22.43.22:076][441]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2021.09.01-22.43.22:204][441]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=false
+[2021.09.01-22.43.22:256][441]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.09.01-22.43.22:256][441]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.09.01-22.43.22:256][441]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.09.01-22.43.22:290][441]LogUObjectHash: Compacting FUObjectHashTables data took   3.58ms
+[2021.09.01-22.43.22:311][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:321][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:323][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:324][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:326][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:327][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:329][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:330][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 14
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 13
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 12
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 11
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 10
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 9
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 8
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 7
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 6
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 5
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 4
+[2021.09.01-22.43.22:331][441]LogShaderCompilers: Display: Worker (12/13): shaders left to compile 3
+[2021.09.01-22.43.22:331][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:333][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:334][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:336][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:337][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:341][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.22:342][441]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 18
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 17
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 16
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 15
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 14
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 13
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (12/13): shaders left to compile 12
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 11
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 10
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 9
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 8
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 7
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 6
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 5
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 4
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 3
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 2
+[2021.09.01-22.43.23:762][441]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 1
+[2021.09.01-22.43.23:762][441]TextureStreamingBuild: Display: Compiling optional shaders took 1.458 seconds.
+[2021.09.01-22.43.23:792][441]LogLevel: Display: Export Material TexCoord Scales took 0.028 seconds.
+[2021.09.01-22.43.23:795][441]TextureStreamingBuild: Display: Build Texture Streaming took 0.004 seconds.
+[2021.09.01-22.43.23:819][441]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.09.01-22.43.23:823][441]LightingResults: New page: Lighting Build - Sep 1, 2021, 8:43:23 AM
+[2021.09.01-22.43.23:856][441]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.09.01-22.43.23:899][441]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.09.01-22.43.23:910][441]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.09.01-22.43.24:423][441]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.09.01-22.43.24:423][441]LogSwarmInterface: [TryOpenConnection] Local Process ID is 34820
+[2021.09.01-22.43.31:158][441]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.09.01-22.43.31:158][441]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.09.01-22.43.31:158][441]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.09.01-22.43.31:158][441]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.09.01-22.43.31:158][441]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.09.01-22.43.31:341][441]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2021.09.01-22.43.31:341][441]MapCheck: New page: TestMapSave - Sep 1, 2021, 8:43:31 AM
+[2021.09.01-22.43.31:341][441]MapCheck: Error: WorldSettings Maps need lighting rebuilt 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_KillZone_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_Checkpoint_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_Checkpoint2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_Checkpoint3 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_Water2_2 Large actor receives a pre-shadow and will cause an extreme performance hit unless bCastDynamicShadow is set to false. 
+[2021.09.01-22.43.31:343][441]MapCheck: Warning: BP_KillZone2_7 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.31:343][441]MapCheck: Map check complete: 1 Error(s), 6 Warning(s), took 2.259ms to complete.
+[2021.09.01-22.43.31:345][441]LogEditorBuildUtils: Build time 0:09
+[2021.09.01-22.43.31:702][444]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.09.01-22.43.35:364][664]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.43.35:372][664]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.43.35:755][693]Job is a success!
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.020s
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:      Indirection Texture 32x16x16 = 0.0Mb
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:      BrickData (all levels) 0.5Mb (trimmed 0.2Mb due to 0.010000 MinBrickError)
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:      Bricks at depth
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:          0: 1.9% covering 100.0% of volume
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:          1: 9.7% covering 7.8% of volume
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:          2: 88.3% covering 1.1% of volume
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:      Bricks in each level
+[2021.09.01-22.43.35:874][694]LogVolumetricLightmapImport:          TestMapSave 			 103 bricks 	 100.0% (Persistent Level)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: SkyOcclusion0_1 (AutoDXT, 1024X512)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: SkyOcclusion0_2 (AutoDXT, 256X128)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256)
+[2021.09.01-22.43.36:199][694]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.09.01-22.43.36:382][694]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 1024X1024)
+[2021.09.01-22.43.36:382][694]Lightmass on DESKTOP-OBMLQHF: 4.19 sec total, 273 ms importing, 18 ms setup, 741 ms photons, 3.12 sec processing, 0 ms extra exporting [131/131 mappings]. Threads: 46.8 sec total, 27.0 sec processing.
+[2021.09.01-22.43.36:382][694]LogStaticLightingSystem: TestMapSave_BuiltData storing lightmap data for 131 meshes in 3 LightmapResourceClusters (43.7 Meshes per cluster).
+[2021.09.01-22.43.36:467][694]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2021.09.01-22.43.36:508][694]LogStaticLightingSystem: Illumination: 12.6 sec (277 ms encoding lightmaps, 144 ms encoding shadowmaps)
+[2021.09.01-22.43.36:509][694]LogStaticLightingSystem: Lightmap texture memory:  2.8 MB (2.8 MB streaming, 0.0 MB non-streaming), 4 textures
+[2021.09.01-22.43.36:509][694]LogStaticLightingSystem: Shadowmap texture memory: 5.3 MB (5.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2021.09.01-22.43.41:174][694]DumpUnbuiltLightIteractions
+[2021.09.01-22.43.41:174][694]Lights with unbuilt interactions: 0
+[2021.09.01-22.43.41:174][694]
+[2021.09.01-22.43.41:174][694]Primitives with unbuilt interactions: 0
+[2021.09.01-22.43.41:290][695]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.09.01-22.43.41:290][695]MapCheck: New page: TestMapSave - Sep 1, 2021, 8:43:41 AM
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_KillZone_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_Checkpoint_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_Checkpoint2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_Checkpoint3 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_Water2_2 Large actor receives a pre-shadow and will cause an extreme performance hit unless bCastDynamicShadow is set to false. 
+[2021.09.01-22.43.41:290][695]MapCheck: Warning: BP_KillZone2_7 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.43.41:291][695]MapCheck: Map check complete: 0 Error(s), 6 Warning(s), took 1.005ms to complete.
+[2021.09.01-22.43.52:882][434]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/Shared/Editor/MapErrors/index.html?utm_source=editor&utm_medium=docs&utm_campaign=msg_log
+[2021.09.01-22.44.07:059][686]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.44.07:076][686]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.44.27:132][801]Cmd: EDIT COPY
+[2021.09.01-22.44.27:410][816]Cmd: EDIT PASTE
+[2021.09.01-22.44.55:286][882]Cmd: EDIT COPY
+[2021.09.01-22.44.55:946][961]Cmd: EDIT PASTE
+[2021.09.01-22.45.41:851][132]LogEditorViewport: Clicking on Actor (LMB): BP_ProximityDoor_C (BP_ProximityDoor8)
+[2021.09.01-22.45.51:148][164]Cmd: EDIT COPY
+[2021.09.01-22.45.51:348][182]Cmd: EDIT PASTE
+[2021.09.01-22.46.00:440][152]LogEditorViewport: Clicking on Actor (LMB): BP_AbilityPickUp_C (BP_AbilityPickUp4)
+[2021.09.01-22.46.04:290][586]LogEditorViewport: Clicking on Actor (LMB): BP_ProximityDoor_C (BP_ProximityDoor9)
+[2021.09.01-22.46.52:962][104]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2021.09.01-22.46.53:025][104]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/TestMapSave_Auto55D8A8AEC4E6108785B91E6AD95A7F1CA.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Autosaves/Game/Maps/TestMapSave_Auto5.umap'
+[2021.09.01-22.46.53:026][104]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/TestMapSave' took 0.093
+[2021.09.01-22.46.53:026][104]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.093
+[2021.09.01-22.46.58:536][720]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor7)
+[2021.09.01-22.46.58:812][747]Cmd: EDIT COPY
+[2021.09.01-22.46.59:019][771]Cmd: EDIT PASTE
+[2021.09.01-22.48.03:601][908]Cmd: DELETE
+[2021.09.01-22.48.03:601][908]Cmd: ACTOR DELETE
+[2021.09.01-22.48.03:632][908]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2021.09.01-22.48.03:643][908]LogEditorActor: Deleted 0 Actors (0.042 secs)
+[2021.09.01-22.48.53:754][454]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SuperGrid_Box126)
+[2021.09.01-22.49.01:935][386]Cmd: TRANSACTION UNDO
+[2021.09.01-22.49.01:935][386]LogEditorTransaction: Undo Move Actors
+[2021.09.01-22.49.02:002][386]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_4:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.09.01-22.49.19:815][388]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2021.09.01-22.49.20:492][388]LogSlate: Window 'Save Content' being destroyed
+[2021.09.01-22.49.20:540][388]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/Imported_Character/Flair" FILE="../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/AI/Imported_Character/Flair.uasset" SILENT=true
+[2021.09.01-22.49.20:549][388]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/Flair68DAAEBE485AFEA3906CE79DA5AA0B2E.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/AI/Imported_Character/Flair.uasset'
+[2021.09.01-22.49.20:576][388]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2021.09.01-22.49.20:628][388]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/TestMapSave899884FC4EAEE232E32ACAAA6F285C55.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Maps/TestMapSave.umap'
+[2021.09.01-22.49.20:635][388]LogFileHelpers: Saving map 'TestMapSave' took 0.086
+[2021.09.01-22.49.20:636][388]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/TestMapSave_BuiltData" FILE="../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Maps/TestMapSave_BuiltData.uasset" SILENT=true
+[2021.09.01-22.49.20:691][388]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/TestMapSave_BuiltDataD2E5BDCA40F48DD214C4AE993231BF85.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/Maps/TestMapSave_BuiltData.uasset'
+[2021.09.01-22.49.20:704][388]AssetCheck: New page: Asset Save: multiple assets
+[2021.09.01-22.49.20:705][388]LogContentValidation: Display: Validating AnimSequence /Game/AI/Imported_Character/Flair.Flair
+[2021.09.01-22.49.20:705][388]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/TestMapSave_BuiltData.TestMapSave_BuiltData
+[2021.09.01-22.49.20:705][388]LogContentValidation: Display: Validating World /Game/Maps/TestMapSave.TestMapSave
+[2021.09.01-22.50.28:572][920]Candidate modules for hot reload:
+[2021.09.01-22.50.28:572][920]  Module5Proj
+[2021.09.01-22.50.28:572][920]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Module5Proj,4352 Module5ProjEditor Win64 Development -Project="C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject" "C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject"  -IgnoreJunk]
+[2021.09.01-22.50.28:575][920]Warning: Starting HotReload took  0.0s.
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: New page: Compilation - Sep 1, 2021, 8:50:30 AM
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Puia\Documents\GitHub\Module5SoloProj).
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Building Module5ProjEditor...
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Building 3 actions with 16 processes...
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog:   [1/3] UE4Editor-Module5Proj-4352.lib
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-4352.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-4352.exp
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog:   [2/3] UE4Editor-Module5Proj-4352.dll
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-4352.suppressed.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-4352.suppressed.exp
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog:   [3/3] Module5ProjEditor.target
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Total time in Parallel executor: 0.93 seconds
+[2021.09.01-22.50.30:280][ 59]CompilerResultsLog: Total execution time: 1.64 seconds
+[2021.09.01-22.50.30:280][ 59]LogMainFrame: MainFrame: Module compiling took 1.712 seconds
+[2021.09.01-22.50.30:368][ 59]LogClass: EMovementState HotReload.
+[2021.09.01-22.50.30:388][ 59]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'Module5Proj' in 0.0003 seconds. Added 28 classes and 11 folders.
+[2021.09.01-22.50.30:394][ 59]Display: HotReload successful (20 functions remapped  0 scriptstructs remapped)
+[2021.09.01-22.50.30:472][ 59]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0114 seconds. Added 3638 classes and 875 folders.
+[2021.09.01-22.50.30:472][ 59]Display: HotReload took  1.9s.
+[2021.09.01-22.50.33:108][306]LogEditorViewport: Clicking on Actor (LMB): BP_ProximityDoor_C (BP_ProximityDoor9)
+[2021.09.01-22.50.33:840][376]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SuperGrid_Box121)
+[2021.09.01-22.50.35:703][548]LogEditorViewport: Clicking on Actor (LMB): BP_ProximityDoor_C (BP_ProximityDoor9)
+[2021.09.01-22.50.43:433][400]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-22.50.43:443][400]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-22.50.43:443][400]PIE: New page: PIE session: TestMapSave (Sep 1, 2021, 8:50:43 AM)
+[2021.09.01-22.50.43:484][400]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.50.43:498][400]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013158s)
+[2021.09.01-22.50.43:498][400]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-22.50.43:499][400]LogPlayLevel: PIE: World Init took: (0.000998s)
+[2021.09.01-22.50.43:499][400]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMapSave.TestMapSave to /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave (0.014383s)
+[2021.09.01-22.50.43:590][400]LogUObjectHash: Compacting FUObjectHashTables data took   5.26ms
+[2021.09.01-22.50.43:594][400]LogAudio: Display: Creating Audio Device:                 Id: 30, Scope: Unique, Realtime: True
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-22.50.43:594][400]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-22.50.43:594][400]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-22.50.43:595][400]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-22.50.43:595][400]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-22.50.43:599][400]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-22.50.43:622][400]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-22.50.43:623][400]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-22.50.43:623][400]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-22.50.43:623][400]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-22.50.43:623][400]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-22.50.43:623][400]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-22.50.43:623][400]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-22.50.43:641][400]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-22.50.43:641][400]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-22.50.43:641][400]LogInit: FAudioDevice initialized.
+[2021.09.01-22.50.43:641][400]LogAudio: Display: Audio Device (ID: 30) registered with world 'TestMapSave'.
+[2021.09.01-22.50.43:655][400]LogLoad: Game class is 'BP_Gamemode_C'
+[2021.09.01-22.50.43:668][400]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave up for play (max tick rate 0) at 2021.09.01-15.50.43
+[2021.09.01-22.50.43:671][400]LogWorld: Bringing up level for play took: 0.015747
+[2021.09.01-22.50.43:672][400]LogOnline: OSS: Creating online subsystem instance for: :Context_51
+[2021.09.01-22.50.43:676][400]PIE: Server logged in
+[2021.09.01-22.50.43:677][400]PIE: Play in editor total start time 0.238 seconds.
+[2021.09.01-22.51.17:769][476]LogNiagara: Niagara Effect stalled GT for 1.7755 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_1.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.51.36:600][721]LogTemp: Warning: DED
+[2021.09.01-22.51.36:630][724]LogNiagara: Niagara Effect stalled GT for 1.8851 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_4.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.51.38:182][910]LogNiagara: Niagara Effect stalled GT for 1.282 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_9.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.51.40:620][202]LogTemp: Warning: DED
+[2021.09.01-22.51.41:370][292]LogTemp: Warning: DED
+[2021.09.01-22.51.41:538][307]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.51.41:538][307]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.51.41:539][307]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-22.51.41:541][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.51.41:549][307]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-22.51.41:572][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.51.41:597][307]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.09.01-22.51.41:597][307]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.51.41:599][307]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.51.41:617][307]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.51.41:625][307]LogUObjectHash: Compacting FUObjectHashTables data took   4.12ms
+[2021.09.01-22.51.41:668][308]LogPlayLevel: Display: Destroying online subsystem :Context_51
+[2021.09.01-22.51.42:685][415]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-22.51.42:692][415]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-22.51.42:692][415]PIE: New page: PIE session: TestMapSave (Sep 1, 2021, 8:51:42 AM)
+[2021.09.01-22.51.42:692][415]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.51.42:705][415]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012842s)
+[2021.09.01-22.51.42:706][415]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-22.51.42:706][415]LogPlayLevel: PIE: World Init took: (0.000785s)
+[2021.09.01-22.51.42:706][415]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMapSave.TestMapSave to /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave (0.013759s)
+[2021.09.01-22.51.42:732][415]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.09.01-22.51.42:733][415]LogAudio: Display: Creating Audio Device:                 Id: 31, Scope: Unique, Realtime: True
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-22.51.42:733][415]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-22.51.42:733][415]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-22.51.42:734][415]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-22.51.42:734][415]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-22.51.42:737][415]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-22.51.42:751][415]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-22.51.42:752][415]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-22.51.42:752][415]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-22.51.42:752][415]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-22.51.42:752][415]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-22.51.42:752][415]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-22.51.42:752][415]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-22.51.42:768][415]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-22.51.42:769][415]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-22.51.42:769][415]LogInit: FAudioDevice initialized.
+[2021.09.01-22.51.42:769][415]LogAudio: Display: Audio Device (ID: 31) registered with world 'TestMapSave'.
+[2021.09.01-22.51.42:783][415]LogLoad: Game class is 'BP_Gamemode_C'
+[2021.09.01-22.51.42:795][415]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave up for play (max tick rate 0) at 2021.09.01-15.51.42
+[2021.09.01-22.51.42:799][415]LogWorld: Bringing up level for play took: 0.015634
+[2021.09.01-22.51.42:799][415]LogOnline: OSS: Creating online subsystem instance for: :Context_52
+[2021.09.01-22.51.42:803][415]PIE: Server logged in
+[2021.09.01-22.51.42:804][415]PIE: Play in editor total start time 0.114 seconds.
+[2021.09.01-22.52.07:382][353]LogTemp: Warning: DED
+[2021.09.01-22.52.08:232][455]LogTemp: Warning: DED
+[2021.09.01-22.52.09:332][587]LogTemp: Warning: DED
+[2021.09.01-22.52.14:137][162]LogNiagara: Niagara Effect stalled GT for 1.7976 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_2.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.52.15:137][282]LogNiagara: Niagara Effect stalled GT for 1.4094 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_3.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.52.15:154][284]LogNiagara: Niagara Effect stalled GT for 1.2688 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_4.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.52.16:154][404]LogNiagara: Niagara Effect stalled GT for 1.1825 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_5.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.52.38:741][107]LogNiagara: Niagara Effect stalled GT for 1.2018 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_11.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.52.48:647][292]LogNiagara: Niagara Effect stalled GT for 1.7656 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_17.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.02:363][937]LogNiagara: Niagara Effect stalled GT for 1.3792 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_18.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.02:913][  3]LogNiagara: Niagara Effect stalled GT for 1.1405 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_19.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.03:384][ 59]LogNiagara: Niagara Effect stalled GT for 1.942 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_20.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.03:409][ 62]LogNiagara: Niagara Effect stalled GT for 1.0539 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_21.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.03:477][ 70]LogNiagara: Niagara Effect stalled GT for 1.7444 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_22.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.03:993][132]LogNiagara: Niagara Effect stalled GT for 1.1362 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_24.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.04:418][183]LogNiagara: Niagara Effect stalled GT for 1.3685 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_25.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.04:518][195]LogNiagara: Niagara Effect stalled GT for 1.0921 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_27.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.05:018][255]LogNiagara: Niagara Effect stalled GT for 1.2974 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_28.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.05:500][312]LogNiagara: Niagara Effect stalled GT for 1.9599 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_29.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.05:533][316]LogNiagara: Niagara Effect stalled GT for 1.0163 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_30.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.06:201][396]LogNiagara: Niagara Effect stalled GT for 1.1058 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_31.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.06:528][435]LogNiagara: Niagara Effect stalled GT for 1.8402 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_32.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.06:928][483]LogNiagara: Niagara Effect stalled GT for 1.326 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_34.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.10:509][912]LogNiagara: Niagara Effect stalled GT for 1.0188 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_35.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.10:518][913]LogNiagara: Niagara Effect stalled GT for 1.4716 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_36.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.11:538][ 35]LogNiagara: Niagara Effect stalled GT for 1.8509 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_37.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.12:555][157]LogNiagara: Niagara Effect stalled GT for 1.9198 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_38.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.13:346][252]LogTemp: Warning: DED
+[2021.09.01-22.53.17:305][725]LogNiagara: Niagara Effect stalled GT for 1.382 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_39.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.17:913][798]LogTemp: Warning: DED
+[2021.09.01-22.53.17:931][800]LogNiagara: Niagara Effect stalled GT for 1.7982 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_40.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.18:656][887]LogNiagara: Niagara Effect stalled GT for 1.4449 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_42.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.19:348][970]LogNiagara: Niagara Effect stalled GT for 1.8096 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_44.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.19:997][ 48]LogTemp: Warning: DED
+[2021.09.01-22.53.22:399][336]LogNiagara: Niagara Effect stalled GT for 1.6643 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_49.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.22:573][357]LogTemp: Warning: DED
+[2021.09.01-22.53.25:324][687]LogTemp: Warning: DED
+[2021.09.01-22.53.25:441][701]LogTemp: Warning: DED
+[2021.09.01-22.53.25:693][731]LogNiagara: Niagara Effect stalled GT for 1.788 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_51.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.25:876][753]LogNiagara: Niagara Effect stalled GT for 1.7555 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_52.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.26:901][876]LogNiagara: Niagara Effect stalled GT for 1.2701 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_53.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.28:325][ 47]LogTemp: Warning: DED
+[2021.09.01-22.53.28:985][126]LogNiagara: Niagara Effect stalled GT for 1.3556 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_55.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.30:401][296]LogTemp: Warning: DED
+[2021.09.01-22.53.31:514][429]LogNiagara: Niagara Effect stalled GT for 1.6486 ms. Component(NiagaraComponent /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave:PersistentLevel.FirstPersonProjectile_C_57.Niagara) System(NiagaraSystem /Game/VFX/NS_Bullet_Trail_System.NS_Bullet_Trail_System)
+[2021.09.01-22.53.35:128][858]LogTemp: Warning: DED
+[2021.09.01-22.53.35:661][922]LogTemp: Warning: DED
+[2021.09.01-22.53.36:228][985]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.53.36:228][985]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.53.36:228][985]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-22.53.36:230][985]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.53.36:241][985]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-22.53.36:264][985]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.53.36:287][985]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.53.36:287][985]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.53.36:288][985]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.53.36:313][985]LogUObjectHash: Compacting FUObjectHashTables data took   3.77ms
+[2021.09.01-22.53.36:357][986]LogPlayLevel: Display: Destroying online subsystem :Context_52
+[2021.09.01-22.53.46:605][183]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BP_BT" FILE="../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/AI/BP_BT.uasset" SILENT=true
+[2021.09.01-22.53.46:609][183]LogSavePackage: Moving '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Saved/BP_BT6B3DE0CE4EF6C9D80AFA958BB58A01F8.tmp' to '../../../../../../Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Content/AI/BP_BT.uasset'
+[2021.09.01-22.53.46:620][183]AssetCheck: New page: Asset Save: BP_BT
+[2021.09.01-22.53.46:620][183]LogContentValidation: Display: Validating BehaviorTree /Game/AI/BP_BT.BP_BT
+[2021.09.01-22.53.53:035][910]LogEditorViewport: Clicking on Actor (LMB): BP_AbilityPickUp_C (BP_AbilityPickUp5)
+[2021.09.01-22.53.53:307][933]Cmd: EDIT COPY
+[2021.09.01-22.53.53:773][988]Cmd: EDIT PASTE
+[2021.09.01-22.54.03:124][ 30]LogEditorViewport: Clicking on Actor (LMB): BP_AbilityPickUp_C (BP_AbilityPickUp5)
+[2021.09.01-22.54.07:281][494]Candidate modules for hot reload:
+[2021.09.01-22.54.07:281][494]  Module5Proj
+[2021.09.01-22.54.07:282][494]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Module5Proj,8305 Module5ProjEditor Win64 Development -Project="C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject" "C:/Users/Puia/Documents/GitHub/Module5SoloProj/Module5Proj/Module5Proj.uproject"  -IgnoreJunk]
+[2021.09.01-22.54.07:285][494]Warning: Starting HotReload took  0.0s.
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: New page: Compilation - Sep 1, 2021, 8:54:08 AM
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Puia\Documents\GitHub\Module5SoloProj).
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Building Module5ProjEditor...
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Using Visual Studio 2019 14.29.30133 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Building 3 actions with 16 processes...
+[2021.09.01-22.54.08:861][614]CompilerResultsLog:   [1/3] UE4Editor-Module5Proj-8305.lib
+[2021.09.01-22.54.08:861][614]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-8305.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-8305.exp
+[2021.09.01-22.54.08:861][614]CompilerResultsLog:   [2/3] UE4Editor-Module5Proj-8305.dll
+[2021.09.01-22.54.08:861][614]CompilerResultsLog:      Creating library C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-8305.suppressed.lib and object C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj-8305.suppressed.exp
+[2021.09.01-22.54.08:861][614]CompilerResultsLog:   [3/3] Module5ProjEditor.target
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Total time in Parallel executor: 0.93 seconds
+[2021.09.01-22.54.08:861][614]CompilerResultsLog: Total execution time: 1.50 seconds
+[2021.09.01-22.54.08:861][614]LogMainFrame: MainFrame: Module compiling took 1.582 seconds
+[2021.09.01-22.54.08:958][614]LogClass: EMovementState HotReload.
+[2021.09.01-22.54.08:976][614]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'Module5Proj' in 0.0003 seconds. Added 28 classes and 11 folders.
+[2021.09.01-22.54.08:981][614]Display: HotReload successful (20 functions remapped  0 scriptstructs remapped)
+[2021.09.01-22.54.09:055][614]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0085 seconds. Added 3638 classes and 875 folders.
+[2021.09.01-22.54.09:055][614]Display: HotReload took  1.8s.
+[2021.09.01-22.54.13:117][964]MapCheck: New page: Map Check
+[2021.09.01-22.54.13:143][964]Cmd: MAP REBUILD ALLVISIBLE
+[2021.09.01-22.54.13:144][964]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2021.09.01-22.54.13:271][964]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=false
+[2021.09.01-22.54.13:326][964]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.09.01-22.54.13:326][964]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.09.01-22.54.13:326][964]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.09.01-22.54.13:405][964]LogUObjectHash: Compacting FUObjectHashTables data took   4.67ms
+[2021.09.01-22.54.13:409][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:410][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:412][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:413][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:415][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:417][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:418][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 12
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 11
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 10
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 9
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 8
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 7
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 6
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 5
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 4
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 3
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 2
+[2021.09.01-22.54.13:419][964]LogShaderCompilers: Display: Worker (12/13): shaders left to compile 1
+[2021.09.01-22.54.13:419][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:421][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:422][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:425][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.13:427][964]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 12
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 11
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 10
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (12/13): shaders left to compile 9
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 8
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 7
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 6
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 5
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 4
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 3
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 2
+[2021.09.01-22.54.14:416][964]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 1
+[2021.09.01-22.54.14:416][964]TextureStreamingBuild: Display: Compiling optional shaders took 1.008 seconds.
+[2021.09.01-22.54.14:443][964]LogLevel: Display: Export Material TexCoord Scales took 0.026 seconds.
+[2021.09.01-22.54.14:448][964]TextureStreamingBuild: Display: Build Texture Streaming took 0.005 seconds.
+[2021.09.01-22.54.14:497][964]LogUObjectHash: Compacting FUObjectHashTables data took   3.03ms
+[2021.09.01-22.54.14:502][964]LightingResults: New page: Lighting Build - Sep 1, 2021, 8:54:14 AM
+[2021.09.01-22.54.14:511][964]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.09.01-22.54.14:522][964]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.09.01-22.54.14:522][964]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.09.01-22.54.14:523][964]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.09.01-22.54.14:523][964]LogSwarmInterface: [TryOpenConnection] Local Process ID is 34820
+[2021.09.01-22.54.19:069][964]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.09.01-22.54.19:069][964]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.09.01-22.54.19:069][964]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.09.01-22.54.19:069][964]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.09.01-22.54.19:069][964]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.09.01-22.54.19:222][964]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2021.09.01-22.54.19:222][964]MapCheck: New page: TestMapSave - Sep 1, 2021, 8:54:19 AM
+[2021.09.01-22.54.19:223][964]MapCheck: Error: WorldSettings Maps need lighting rebuilt 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_KillZone_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_Checkpoint_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_Checkpoint2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_Checkpoint3 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_Water2_2 Large actor receives a pre-shadow and will cause an extreme performance hit unless bCastDynamicShadow is set to false. 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_KillZone2_7 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:223][964]MapCheck: Warning: BP_Checkpoint4 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.19:224][964]MapCheck: Map check complete: 1 Error(s), 7 Warning(s), took 1.327ms to complete.
+[2021.09.01-22.54.19:226][964]LogEditorBuildUtils: Build time 0:06
+[2021.09.01-22.54.19:391][965]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2021.09.01-22.54.23:394][158]Job is a success!
+[2021.09.01-22.54.23:508][159]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.017s
+[2021.09.01-22.54.23:508][159]LogVolumetricLightmapImport:      Indirection Texture 32x16x16 = 0.0Mb
+[2021.09.01-22.54.23:508][159]LogVolumetricLightmapImport:      BrickData (all levels) 0.5Mb (trimmed 0.1Mb due to 0.010000 MinBrickError)
+[2021.09.01-22.54.23:508][159]LogVolumetricLightmapImport:      Bricks at depth
+[2021.09.01-22.54.23:509][159]LogVolumetricLightmapImport:          0: 2.0% covering 100.0% of volume
+[2021.09.01-22.54.23:509][159]LogVolumetricLightmapImport:          1: 9.9% covering 7.8% of volume
+[2021.09.01-22.54.23:509][159]LogVolumetricLightmapImport:          2: 88.1% covering 1.1% of volume
+[2021.09.01-22.54.23:509][159]LogVolumetricLightmapImport:      Bricks in each level
+[2021.09.01-22.54.23:509][159]LogVolumetricLightmapImport:          TestMapSave 			 101 bricks 	 100.0% (Persistent Level)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 1024X512)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 256X256)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 256X128)
+[2021.09.01-22.54.23:822][159]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 256X256)
+[2021.09.01-22.54.23:987][159]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (BGRA8, 1024X1024)
+[2021.09.01-22.54.23:987][159]LogStaticLightingSystem: TestMapSave_BuiltData storing lightmap data for 131 meshes in 3 LightmapResourceClusters (43.7 Meshes per cluster).
+[2021.09.01-22.54.23:992][159]Lightmass on DESKTOP-OBMLQHF: 4.23 sec total, 153 ms importing, 19 ms setup, 751 ms photons, 3.29 sec processing, 0 ms extra exporting [131/131 mappings]. Threads: 49.3 sec total, 27.5 sec processing.
+[2021.09.01-22.54.24:063][159]LogUObjectHash: Compacting FUObjectHashTables data took   2.19ms
+[2021.09.01-22.54.24:106][159]LogStaticLightingSystem: Illumination: 9.55 sec (264 ms encoding lightmaps, 144 ms encoding shadowmaps)
+[2021.09.01-22.54.24:106][159]LogStaticLightingSystem: Lightmap texture memory:  2.8 MB (2.8 MB streaming, 0.0 MB non-streaming), 4 textures
+[2021.09.01-22.54.24:106][159]LogStaticLightingSystem: Shadowmap texture memory: 5.3 MB (5.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2021.09.01-22.54.25:088][159]DumpUnbuiltLightIteractions
+[2021.09.01-22.54.25:088][159]Lights with unbuilt interactions: 0
+[2021.09.01-22.54.25:088][159]
+[2021.09.01-22.54.25:088][159]Primitives with unbuilt interactions: 0
+[2021.09.01-22.54.25:198][160]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.09.01-22.54.25:198][160]MapCheck: New page: TestMapSave - Sep 1, 2021, 8:54:25 AM
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_KillZone_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_Checkpoint_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_Checkpoint2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_Checkpoint3 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_Water2_2 Large actor receives a pre-shadow and will cause an extreme performance hit unless bCastDynamicShadow is set to false. 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_KillZone2_7 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Warning: BP_Checkpoint4 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.25:199][160]MapCheck: Map check complete: 0 Error(s), 7 Warning(s), took 1.042ms to complete.
+[2021.09.01-22.54.29:293][466]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.54.29:309][466]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.54.33:380][819]MapCheck: New page: Map Check
+[2021.09.01-22.54.33:392][819]LightingResults: New page: Lighting Build - Sep 1, 2021, 8:54:33 AM
+[2021.09.01-22.54.33:408][819]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.09.01-22.54.33:414][819]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.09.01-22.54.33:414][819]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.09.01-22.54.33:414][819]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.09.01-22.54.33:414][819]LogSwarmInterface: [TryOpenConnection] Local Process ID is 34820
+[2021.09.01-22.54.37:924][819]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.09.01-22.54.37:924][819]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.09.01-22.54.37:924][819]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.09.01-22.54.37:924][819]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.09.01-22.54.37:924][819]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.09.01-22.54.38:025][819]LogEditorBuildUtils: Build time 0:04
+[2021.09.01-22.54.38:089][820]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
+[2021.09.01-22.54.42:287][ 23]Job is a success!
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.018s
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:      Indirection Texture 32x16x16 = 0.0Mb
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:      BrickData (all levels) 0.5Mb (trimmed 0.1Mb due to 0.010000 MinBrickError)
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:      Bricks at depth
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:          0: 2.0% covering 100.0% of volume
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:          1: 9.9% covering 7.8% of volume
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:          2: 88.1% covering 1.1% of volume
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:      Bricks in each level
+[2021.09.01-22.54.42:402][ 25]LogVolumetricLightmapImport:          TestMapSave 			 101 bricks 	 100.0% (Persistent Level)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: SkyOcclusion0_1 (AutoDXT, 1024X512)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: SkyOcclusion0_2 (AutoDXT, 256X128)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 256X256)
+[2021.09.01-22.54.42:717][ 25]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 256X256)
+[2021.09.01-22.54.42:889][ 25]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (BGRA8, 1024X1024)
+[2021.09.01-22.54.42:889][ 25]LogStaticLightingSystem: TestMapSave_BuiltData storing lightmap data for 131 meshes in 3 LightmapResourceClusters (43.7 Meshes per cluster).
+[2021.09.01-22.54.42:896][ 25]Lightmass on DESKTOP-OBMLQHF: 4.41 sec total, 164 ms importing, 18 ms setup, 778 ms photons, 3.43 sec processing, 0 ms extra exporting [131/131 mappings]. Threads: 51.4 sec total, 29.4 sec processing.
+[2021.09.01-22.54.42:969][ 25]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2021.09.01-22.54.43:021][ 25]LogStaticLightingSystem: Illumination: 9.57 sec (263 ms encoding lightmaps, 153 ms encoding shadowmaps)
+[2021.09.01-22.54.43:021][ 25]LogStaticLightingSystem: Lightmap texture memory:  2.8 MB (2.8 MB streaming, 0.0 MB non-streaming), 4 textures
+[2021.09.01-22.54.43:021][ 25]LogStaticLightingSystem: Shadowmap texture memory: 5.3 MB (5.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2021.09.01-22.54.43:939][ 25]DumpUnbuiltLightIteractions
+[2021.09.01-22.54.43:939][ 25]Lights with unbuilt interactions: 0
+[2021.09.01-22.54.43:939][ 25]
+[2021.09.01-22.54.43:939][ 25]Primitives with unbuilt interactions: 0
+[2021.09.01-22.54.44:060][ 26]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.09.01-22.54.44:060][ 26]MapCheck: New page: TestMapSave - Sep 1, 2021, 8:54:44 AM
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_KillZone_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_Checkpoint_2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_Checkpoint2 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_Checkpoint3 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_Water2_2 Large actor receives a pre-shadow and will cause an extreme performance hit unless bCastDynamicShadow is set to false. 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_KillZone2_7 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Warning: BP_Checkpoint4 Static mesh actor has NULL StaticMesh property 
+[2021.09.01-22.54.44:061][ 26]MapCheck: Map check complete: 0 Error(s), 7 Warning(s), took 1.042ms to complete.
+[2021.09.01-22.54.57:259][282]LogTemp: Repeating last play command: Selected Viewport
+[2021.09.01-22.54.57:267][282]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.09.01-22.54.57:267][282]PIE: New page: PIE session: TestMapSave (Sep 1, 2021, 8:54:57 AM)
+[2021.09.01-22.54.57:267][282]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.54.57:280][282]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012890s)
+[2021.09.01-22.54.57:281][282]LogAIModule: Creating AISystem for world TestMapSave
+[2021.09.01-22.54.57:281][282]LogPlayLevel: PIE: World Init took: (0.000791s)
+[2021.09.01-22.54.57:281][282]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMapSave.TestMapSave to /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave (0.013804s)
+[2021.09.01-22.54.57:307][282]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2021.09.01-22.54.57:311][282]LogAudio: Display: Creating Audio Device:                 Id: 32, Scope: Unique, Realtime: True
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.09.01-22.54.57:311][282]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.09.01-22.54.57:311][282]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.09.01-22.54.57:312][282]LogAudio: Display: Using built-in audio occlusion.
+[2021.09.01-22.54.57:312][282]LogAudioMixer: Display: Initializing audio mixer.
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 0: FrontLeft
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 1: FrontRight
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 2: FrontCenter
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 3: LowFrequency
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 4: BackLeft
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 5: BackRight
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 6: SideLeft
+[2021.09.01-22.54.57:315][282]LogAudioMixer: Display: 7: SideRight
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial - Synapse)
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.09.01-22.54.57:331][282]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.09.01-22.54.57:331][282]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2021.09.01-22.54.57:347][282]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.09.01-22.54.57:347][282]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.09.01-22.54.57:347][282]LogInit: FAudioDevice initialized.
+[2021.09.01-22.54.57:347][282]LogAudio: Display: Audio Device (ID: 32) registered with world 'TestMapSave'.
+[2021.09.01-22.54.57:359][282]LogLoad: Game class is 'BP_Gamemode_C'
+[2021.09.01-22.54.57:371][282]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMapSave.TestMapSave up for play (max tick rate 0) at 2021.09.01-15.54.57
+[2021.09.01-22.54.57:375][282]LogWorld: Bringing up level for play took: 0.015162
+[2021.09.01-22.54.57:375][282]LogOnline: OSS: Creating online subsystem instance for: :Context_53
+[2021.09.01-22.54.57:379][282]PIE: Server logged in
+[2021.09.01-22.54.57:380][282]PIE: Play in editor total start time 0.116 seconds.
+[2021.09.01-22.54.58:508][394]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.54.58:508][394]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestMapSave
+[2021.09.01-22.54.58:508][394]LogWorld: UWorld::CleanupWorld for TestMapSave, bSessionEnded=true, bCleanupResources=true
+[2021.09.01-22.54.58:510][394]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.54.58:520][394]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.09.01-22.54.58:546][394]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.09.01-22.54.58:570][394]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.09.01-22.54.58:572][394]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.54.58:573][394]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.09.01-22.54.58:598][394]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2021.09.01-22.54.58:647][395]LogPlayLevel: Display: Destroying online subsystem :Context_53
+[2021.09.01-22.55.45:409][ 81]LogEditorBuildUtils: Warning: Cannot connect to source control; automated build aborted.
+[2021.09.01-22.55.45:409][ 81]BuildAndSubmitErrors: New page: Build and Submit
+[2021.09.01-22.55.45:409][ 81]BuildAndSubmitErrors: Error: Cannot connect to source control; automated build aborted.
+[2021.09.01-22.55.49:699][480]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.55.49:714][480]LogSlate: Window 'Message Log' being destroyed
+[2021.09.01-22.55.50:272][531]LogSlate: Window 'Build and Submit' being destroyed
+[2021.09.01-22.55.50:287][531]LogSlate: Window 'Build and Submit' being destroyed
