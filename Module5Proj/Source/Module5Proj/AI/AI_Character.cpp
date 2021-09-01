@@ -2,6 +2,9 @@
 
 
 #include "AI_Character.h"
+
+#include "BehaviorTree/BlackboardComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "Runtime/Engine/Classes/Engine/World.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Materials/MaterialInstanceDynamic.h"
@@ -9,6 +12,8 @@
 #include "GameFramework/PlayerController.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include "Module5Proj/Module5ProjProjectile.h"
+#include "Module5Proj/AI/AI_Controller.h"
+#include "Module5Proj/Blackboard_Keys.h"
 
 
 // Sets default values
@@ -112,5 +117,13 @@ void AAI_Character::Shoot()
 
 void AAI_Character::KillEnemy()
 {
-	UE_LOG(LogTemp, Warning, TEXT("DED"));
+	if(DeathAnimation)
+	{
+		AAI_Controller* AIController = Cast<AAI_Controller>(GetController());
+		AIController->getBlackboard()->SetValueAsBool(bb_keys::is_dead, true);
+		PlayAnimMontage(DeathAnimation, 1.f);
+		//GetCapsuleComponent()->InitCapsuleSize(0.f, 0.f);
+		UE_LOG(LogTemp, Warning, TEXT("Enemy Ded"));
+	}
+
 }

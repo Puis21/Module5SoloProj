@@ -60,10 +60,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		float BaseLookUpRate;
 
-	/** Projectile class to spawn */
-	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class AModule5ProjProjectile> ProjectileClass;
-
 	/** Sound to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Sounds)
 		USoundBase* SwingSound;
@@ -172,7 +168,7 @@ private:
 	UPROPERTY()
 	FTimerHandle DashTimerHandle;
 
-	//class UAIPerceptionStimuliSourceComponent* stimulus;
+	class UAIPerceptionStimuliSourceComponent* stimulus;
 
 	void setUpStimulus();
 

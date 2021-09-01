@@ -86,7 +86,7 @@ void UAbility_PositionSwap::AbilityUsed()
 				FVector EnemyPos = HitMarkerCast->GetActorLocation();
 				HitMarkerCast->SetActorLocation(PlayerLoc);
 				m_ACPlayerCharacter->TeleportTo(EnemyPos, FRotator::ZeroRotator, false, false);
-				//m_ACPlayerCharacter->AddControllerYawInput(m_ACPlayerCharacter->GetActorRotation().Yaw + 360.f); //Removed turning to the enemy swapped
+				m_ACPlayerCharacter->AddControllerYawInput(m_ACPlayerCharacter->GetActorRotation().Yaw + 360.f); //Removed turning to the enemy swapped
 				m_fCurrentAbilitySize -= 5.f;
 				AbilityCancelled();
 			}

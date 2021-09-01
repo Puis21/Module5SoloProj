@@ -8,9 +8,8 @@
 #include "Perception/AIPerceptionTypes.h"
 #include "AI_Controller.generated.h"
 
-/**
- *
- */
+class AAI_Character;
+
 UCLASS()
 class MODULE5PROJ_API AAI_Controller : public AAIController
 {
@@ -25,8 +24,6 @@ public:
 	void OnPossess(APawn* const pawn) override;
 	class UBlackboardComponent* getBlackboard() const;
 
-	APlayerCharacter* GetPlayerCharacter() const;
-
 private:
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = "true"))
@@ -40,8 +37,9 @@ private:
 	class UAISenseConfig_Sight* sightConfig;
 
 	UFUNCTION()
-		void onUpdated(TArray<AActor*> const& updated_actors);
+	void onUpdated(TArray<AActor*> const& updated_actors);
 
+	UFUNCTION()
 	void OnTargetDetected(AActor* actor, FAIStimulus const stimulus);
 
 	void SetUpPeceptionSystem();

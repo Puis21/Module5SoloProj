@@ -2,21 +2,17 @@
 
 
 #include "PlayerCharacter.h"
-#include "../Module5ProjProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
-#include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/PlayerMovementComponent.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISense_Sight.h"
-#include "DrawDebugHelpers.h"
 #include "Module5Proj/AI/AI_Character.h"
-#include "Camera/CameraComponent.h"
 #include "Module5Proj/Player/Camera/PlayerCameraComponent.h"
 #include "Module5Proj/Player/Components/AbilityComponent.h"
 #include "Module5Proj/Player/Abilities/Ability_PositionSwap.h"
@@ -31,7 +27,7 @@ DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 // APlayerCharacter
 
 APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer.SetDefaultSubobjectClass<UPlayerMovementComponent>(ACharacter::CharacterMovementComponentName))
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<UPlayerMovementComponent>(CharacterMovementComponentName))
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
@@ -150,7 +146,7 @@ void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	check(PlayerInputComponent);
 
 	// Bind jump events
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &APlayerCharacter::DoubleJump);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAction("Dash", IE_Pressed, this, &APlayerCharacter::Dash);
@@ -220,26 +216,6 @@ void APlayerCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AA
 
 void APlayerCharacter::OnHit()
 {
-	// // try and fire a projectile
-	// if (ProjectileClass != nullptr)
-	// {
-	// 	UWorld* const World = GetWorld();
-	// 	if (World != nullptr)
-	// 	{
-
-	// 		const FRotator SpawnRotation = GetControlRotation(); 
-	// 		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-	// 		const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
-
-	// 		//Set Spawn Collision Handling Override
-	// 		FActorSpawnParameters ActorSpawnParams;
-	// 		ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-
-	// 		// spawn the projectile at the muzzle
-	// 		World->SpawnActor<AModule5ProjProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-
-	// 	}
-	// }
 	// Get the animation object for the arms mesh
 	UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
 	if (AnimInstance != nullptr && SwingSound != nullptr && m_bCanAttack)
@@ -271,7 +247,7 @@ void APlayerCharacter::Dash()
 	if (m_bCanDash)
 	{
 		GetCharacterMovement()->BrakingFriction = 0.f;
-		const FVector ForwardDir = this->GetActorRotation().Vector();
+		const FVector ForwardDir = this->GetFirstPersonCameraComponent()->GetForwardVector();
 		LaunchCharacter(ForwardDir * m_fDashDistance, true, true);
 		m_bCanDash = false;
 		GetWorld()->GetTimerManager().SetTimer(DashTimerHandle, this, &APlayerCharacter::DashStop, m_fDashStop, false);
@@ -392,12 +368,12 @@ bool APlayerCharacter::GetPressedSprint()
 	return m_bPressedSprint;
 }
 
-//void APlayerCharacter::setUpStimulus()
-//{
-//	stimulus = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimulus"));
-//	stimulus->RegisterForSense(TSubclassOf<UAISense_Sight>());
-//	stimulus->RegisterWithPerceptionSystem();
-//}
+void APlayerCharacter::setUpStimulus()
+{
+	stimulus = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimulus"));
+	stimulus->RegisterForSense(TSubclassOf<UAISense_Sight>());
+	stimulus->RegisterWithPerceptionSystem();
+}
 
 void APlayerCharacter::OnAbility1()
 {
@@ -443,7 +419,7 @@ void APlayerCharacter::Die()
 	{
 		UPlayerSave* SaveGameInstance = Cast<UPlayerSave>(UGameplayStatics::LoadGameFromSlot("Save Slot", 0));
 		this->SetActorLocation(SaveGameInstance->PlayerLocation);
-		this->SetActorRotation(SaveGameInstance->PlayerRotation);\
+		this->SetActorRotation(SaveGameInstance->PlayerRotation);
 		GetCharacterMovement()->StopMovementImmediately();
 		UE_LOG(LogTemp, Warning, TEXT("DED"));
 	}

@@ -50,6 +50,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 		FVector GunOffset;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
+		UAnimMontage* DeathAnimation;
+
 	USceneComponent* GetMuzzleComponent();
 
 	void Shoot();

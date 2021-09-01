@@ -8,6 +8,7 @@
 /NODEFAULTLIB
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\Module5ProjEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Shoot_Task.cpp.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\StopShoot_Task.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\AI_Character.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\AI_Controller.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Ability_PositionSwap.cpp.obj"
@@ -63,6 +64,7 @@
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\PlayerSave.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\ProximityDoor.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Shoot_Task.gen.cpp.obj"
+"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\StopShoot_Task.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\TestTrigger.gen.cpp.obj"
 "C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\Default.rc2.res"
 /OUT:"C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Development\Module5Proj\UE4Editor-Module5Proj.lib"
