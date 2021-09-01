@@ -30,6 +30,7 @@ AAI_Character::AAI_Character()
 
 	GunOffset = FVector(25.0f, 0.0f, 0.0f);
 
+	bisDead = false;
 }
 
 // Called when the game starts or when spawned
@@ -117,13 +118,11 @@ void AAI_Character::Shoot()
 
 void AAI_Character::KillEnemy()
 {
-	if(DeathAnimation)
-	{
-		AAI_Controller* AIController = Cast<AAI_Controller>(GetController());
-		AIController->getBlackboard()->SetValueAsBool(bb_keys::is_dead, true);
-		PlayAnimMontage(DeathAnimation, 1.f);
-		//GetCapsuleComponent()->InitCapsuleSize(0.f, 0.f);
-		UE_LOG(LogTemp, Warning, TEXT("Enemy Ded"));
-	}
-
+	AAI_Controller* AIController = Cast<AAI_Controller>(GetController());
+	AIController->getBlackboard()->SetValueAsBool(bb_keys::is_dead, true);
+	AIController->ClearFocus(EAIFocusPriority::Gameplay);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
+	WeaponMesh->SetSkeletalMesh(nullptr);
+	bisDead = true;
+	SetLifeSpan(3.5f);
 }

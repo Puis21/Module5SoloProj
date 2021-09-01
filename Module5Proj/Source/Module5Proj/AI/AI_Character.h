@@ -5,7 +5,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-//#include "Module5Proj/AI/Guns/BaseWeapon.h"
+#include "Components/TimelineComponent.h"
 #include "AI_Character.generated.h"
 
 class APlayerCharacter;
@@ -51,9 +51,13 @@ public:
 		FVector GunOffset;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animation)
-		UAnimMontage* DeathAnimation;
+		bool bisDead;
 
 	USceneComponent* GetMuzzleComponent();
+
+	FTimerHandle DespawnTimer;
+
+	void DestroyEnemy();
 
 	void Shoot();
 

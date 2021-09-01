@@ -195,6 +195,7 @@ void APlayerCharacter::OnOverLapBegin(UPrimitiveComponent* OverlappedComponent, 
 			{
 				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
 				UGameplayStatics::PlaySoundAtLocation(this, HitSound, Enemy->GetActorLocation());
+				Enemy->KillEnemy();
 			}
 		}
 		if(M_ACPickUpComponent)
@@ -224,6 +225,7 @@ void APlayerCharacter::OnHit()
 		m_bCanAttack = false;
 		UGameplayStatics::PlaySoundAtLocation(this, SwingSound, GetActorLocation());
 		//UGameplayStatics::SpawnEmitterAttached(m_pShieldParticleSystem, GetMesh1P(), FName("ShieldSocket"), FVector::ZeroVector, FRotator::ZeroRotator, FVector(1.f, 1.f, 1.f), EAttachLocation::KeepWorldPosition, true);
+
 		AnimInstance->Montage_Play(SwingAnimation, 1.f);
 	}
 }
