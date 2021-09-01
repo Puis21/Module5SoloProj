@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Module5Proj.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2E8CE904-0CFE-4BA5-BBCA-02735DC268EC}</UniqueIdentifier>
+      <UniqueIdentifier>{758A990F-9AD1-4E26-A3C3-87C8A80636EB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Module5Proj.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{DB5F43C3-7B92-4F54-BCDC-1ED3FF158B50}</UniqueIdentifier>
+      <UniqueIdentifier>{EC5F376D-4456-437F-B406-DED9F31B3637}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Module5Proj">
-      <UniqueIdentifier>{38BA45DC-2EF8-46A3-9C16-69406B681CAB}</UniqueIdentifier>
+      <UniqueIdentifier>{2A44C39B-6B76-4FC1-9D48-AA854FC8D6F2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Module5Proj\Blackboard_Keys.h">
       <Filter>Source\Module5Proj</Filter>
@@ -75,7 +75,7 @@
       <Filter>Source\Module5Proj</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\AI">
-      <UniqueIdentifier>{67FDFC55-278D-4FC2-BC57-3A4600DCB3EF}</UniqueIdentifier>
+      <UniqueIdentifier>{099926F5-2F8D-48EB-9A49-4C313583C5B5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\AI\AI_Character.cpp">
       <Filter>Source\Module5Proj\AI</Filter>
@@ -90,7 +90,7 @@
       <Filter>Source\Module5Proj\AI</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\AI\Tasks">
-      <UniqueIdentifier>{ABCC98AD-EBC3-424A-9D73-545758524C08}</UniqueIdentifier>
+      <UniqueIdentifier>{CDFF1BA5-F07D-4003-8B89-45B80AB9C82D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\AI\Tasks\Shoot_Task.cpp">
       <Filter>Source\Module5Proj\AI\Tasks</Filter>
@@ -99,7 +99,7 @@
       <Filter>Source\Module5Proj\AI\Tasks</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player">
-      <UniqueIdentifier>{82BC8625-053C-4514-881F-C13B38AC0418}</UniqueIdentifier>
+      <UniqueIdentifier>{4267F5AE-D712-4EF9-8581-65D1A092F6EC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\MenuPlayerController.cpp">
       <Filter>Source\Module5Proj\Player</Filter>
@@ -120,7 +120,7 @@
       <Filter>Source\Module5Proj\Player</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Abilities">
-      <UniqueIdentifier>{CB3F3BAD-FA9C-442E-93EC-535B24C1B2FC}</UniqueIdentifier>
+      <UniqueIdentifier>{B143D3BB-E8D5-4C3B-B01B-7F8FE6F9A790}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Abilities\Ability_PositionSwap.cpp">
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
@@ -135,7 +135,7 @@
       <Filter>Source\Module5Proj\Player\Abilities</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Camera">
-      <UniqueIdentifier>{79DDE3A9-408F-4113-95C8-4C79979AB95E}</UniqueIdentifier>
+      <UniqueIdentifier>{5FFFF82F-ADDA-4CE0-8E07-B7317F25F983}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Camera\PlayerCameraComponent.cpp">
       <Filter>Source\Module5Proj\Player\Camera</Filter>
@@ -150,7 +150,7 @@
       <Filter>Source\Module5Proj\Player\Camera</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Components">
-      <UniqueIdentifier>{41A19420-A57B-4DC8-9FDA-BD05F476C6F1}</UniqueIdentifier>
+      <UniqueIdentifier>{3C224709-C975-4EA6-9AD2-F75A2425A443}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Components\AbilityComponent.cpp">
       <Filter>Source\Module5Proj\Player\Components</Filter>
@@ -177,7 +177,7 @@
       <Filter>Source\Module5Proj\Player\Components</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Interactables">
-      <UniqueIdentifier>{37695EBD-CB40-466C-B3E0-C3369EDE9C77}</UniqueIdentifier>
+      <UniqueIdentifier>{53C8644F-D368-473D-9A86-E02AC754D1A9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Interactables\AbilityPickUp.cpp">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
@@ -197,8 +197,14 @@
     <ClInclude Include="..\..\Source\Module5Proj\Player\Interactables\KillZone.h">
       <Filter>Source\Module5Proj\Player\Interactables</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Module5Proj\Player\Interactables\ProximityDoor.cpp">
+      <Filter>Source\Module5Proj\Player\Interactables</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Module5Proj\Player\Interactables\ProximityDoor.h">
+      <Filter>Source\Module5Proj\Player\Interactables</Filter>
+    </ClInclude>
     <Filter Include="Source\Module5Proj\Player\Notifies">
-      <UniqueIdentifier>{94A99705-2487-483A-AB3E-142E80169668}</UniqueIdentifier>
+      <UniqueIdentifier>{8A81632F-AAF9-45EE-B904-8E166D217162}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\Player\Notifies\ActivateMeleeDamage.cpp">
       <Filter>Source\Module5Proj\Player\Notifies</Filter>
@@ -219,7 +225,7 @@
       <Filter>Source\Module5Proj\Player\Notifies</Filter>
     </ClInclude>
     <Filter Include="Source\Module5Proj\UI">
-      <UniqueIdentifier>{9CE68125-B8B5-439A-AD57-67193FA081A5}</UniqueIdentifier>
+      <UniqueIdentifier>{435D3BE9-5AB3-456B-ACF7-CF86A1B61044}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Module5Proj\UI\AbilityWidget.cpp">
       <Filter>Source\Module5Proj\UI</Filter>
