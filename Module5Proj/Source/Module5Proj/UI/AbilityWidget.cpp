@@ -64,9 +64,3 @@ void UAbilityWidget::UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp)
 	}
 
 }
-
-
-void UAbilityWidget::ResetAbilitySwapBar()
-{
-	
-}

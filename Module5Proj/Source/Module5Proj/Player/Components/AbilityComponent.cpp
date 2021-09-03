@@ -14,21 +14,3 @@ UAbilityComponent::UAbilityComponent()
 	m_bCanUseAbility = true;
 }
 
-
-// Called when the game starts
-void UAbilityComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-
-}
-
-
-// Called every frame
-void UAbilityComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
-}

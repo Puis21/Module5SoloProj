@@ -16,38 +16,39 @@ public:
 	// Sets default values for this component's properties
 	UAbilityComponent();
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+	//Max Ability CD
 	UPROPERTY(EditAnywhere)
 		float m_fMaxAbilitySize;
 
+	//Current CD
 	UPROPERTY(VisibleAnywhere)
 		float m_fCurrentAbilitySize;
 
+	//Decrease CD rate
 	UPROPERTY(VisibleAnywhere)
 		float m_fAbilityDecreaseRate;
 
+	//Increase CD rate
 	UPROPERTY(EditAnywhere)
 		float m_fAbilityIncreaseRate;
 
+	//Max Ability Charges
 	UPROPERTY(EditAnywhere)
 		int m_iMaxAbilityCharges;
 
+	//Current Ability Charges
 	UPROPERTY(VisibleAnywhere)
 		int m_iCurrentAbilityCharges;
 
+	//bool ability active
 	UPROPERTY(VisibleAnywhere)
 		bool m_bAbilityActive;
 
+	//bool can use ability
 	UPROPERTY(VisibleAnywhere)
 		bool m_bCanUseAbility;
 
+	//timer ability decrease
 	UPROPERTY(BlueprintReadOnly)
 		FTimerHandle TimerAbilityDecreaseRate;
 };

@@ -16,7 +16,7 @@ void SMenuWidget::Construct(const FArguments& InArgs)
 	const FMargin ContentPadding = FMargin(500.f, 300.f);
 	const FMargin ButtonPadding = FMargin(500.f, 10.f);
 
-	const FText TitleText = LOCTEXT("Title", "Menu");
+	const FText TitleText = LOCTEXT("Title", "Forgotten Warrior");
 	const FText PlayText = LOCTEXT("Play", "PlayGame");
 	const FText QuitText = LOCTEXT("Quit", "QuitGame");
 
@@ -45,7 +45,7 @@ void SMenuWidget::Construct(const FArguments& InArgs)
 				SNew(SVerticalBox)
 				
 				//Title Text
-				+ SVerticalBox::Slot()
+				+ SVerticalBox::Slot ()
 				[
 					SNew(STextBlock)
 					.Font(TitleTextStyle)

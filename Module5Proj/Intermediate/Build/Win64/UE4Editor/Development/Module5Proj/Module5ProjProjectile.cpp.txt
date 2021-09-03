@@ -18,6 +18,4 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\PlayerCharacter.generated.h
 C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Source\Module5Proj/AI/AI_Character.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/TimelineComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TimelineComponent.generated.h
 C:\Users\Puia\Documents\GitHub\Module5SoloProj\Module5Proj\Intermediate\Build\Win64\UE4Editor\Inc\Module5Proj\AI_Character.generated.h

@@ -79,6 +79,7 @@ void UAbility_PositionSwap::AbilityUsed()
 
         bool bHit = GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, TraceParams);
 
+        //Check if hit was enemy
        if (AAI_Character* HitMarkerCast = Cast<AAI_Character>(Hit.GetActor()))
         {
        	if(m_fCurrentAbilitySize >= 5)
@@ -92,8 +93,8 @@ void UAbility_PositionSwap::AbilityUsed()
 			}
         }
 
-        if (bHit)
-            DrawDebugBox(GetWorld(), Hit.ImpactPoint, FVector(5, 5, 5), FColor::Emerald, false, 2.0f);
+       /* if (bHit)
+            DrawDebugBox(GetWorld(), Hit.ImpactPoint, FVector(5, 5, 5), FColor::Emerald, false, 2.0f);*/
 
         //m_ACPlayerCharacter->FirstPersonCameraComponent.PostProcessSettings.ColorGamma = FVector4(1, 1, 1, 1);
     }

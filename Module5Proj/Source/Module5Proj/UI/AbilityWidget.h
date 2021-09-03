@@ -27,8 +27,6 @@ public:
 
 	void UpdateAbilityShieldBar(class UAbility_Shield* AbilityComp);
 
-	void ResetAbilitySwapBar();
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 	class UProgressBar* AbilitySwapBar;
 

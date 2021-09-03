@@ -171,15 +171,11 @@ void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &APlayerCharacter::OnCrouch);
 
-	PlayerInputComponent->BindAction("Ability_TimeSlow", IE_Pressed, this, &APlayerCharacter::OnAbility1);
-
 	PlayerInputComponent->BindAction("Ability_SwapPos", IE_Pressed, this, &APlayerCharacter::OnAbility2Used);
 
 	PlayerInputComponent->BindAction("Mouse_Right", IE_Pressed, this, &APlayerCharacter::OnAbilityCancel);
 
 	PlayerInputComponent->BindAction("Ability_Shield", IE_Pressed, this, &APlayerCharacter::OnAbility3Used);
-
-	PlayerInputComponent->BindAction("DieTEST", IE_Pressed, this, &APlayerCharacter::Die);
 
 }
 
@@ -193,7 +189,8 @@ void APlayerCharacter::OnOverLapBegin(UPrimitiveComponent* OverlappedComponent, 
 		{
 			if (Enemy->m_psBloodEffect && HitSound)
 			{
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Enemy->m_psBloodEffect, 
+				Enemy->GetActorLocation(), FRotator::ZeroRotator, false);
 				UGameplayStatics::PlaySoundAtLocation(this, HitSound, Enemy->GetActorLocation());
 				Enemy->KillEnemy();
 			}
@@ -221,11 +218,8 @@ void APlayerCharacter::OnHit()
 	UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
 	if (AnimInstance != nullptr && SwingSound != nullptr && m_bCanAttack)
 	{
-		//GetWorld()->GetTimerManager().SetTimer(TimerAttacks, this, &APlayerCharacter::DecreaseAbilitySize, m_fAbilityDecreaseRate, true);
 		m_bCanAttack = false;
 		UGameplayStatics::PlaySoundAtLocation(this, SwingSound, GetActorLocation());
-		//UGameplayStatics::SpawnEmitterAttached(m_pShieldParticleSystem, GetMesh1P(), FName("ShieldSocket"), FVector::ZeroVector, FRotator::ZeroRotator, FVector(1.f, 1.f, 1.f), EAttachLocation::KeepWorldPosition, true);
-
 		AnimInstance->Montage_Play(SwingAnimation, 1.f);
 	}
 }
@@ -239,7 +233,8 @@ void APlayerCharacter::DoubleJump()
 {
 	if (m_iJumpCounter <= 1)
 	{
-		APlayerCharacter::LaunchCharacter(FVector(0, 0, m_fJumpHeight), false, true);
+		APlayerCharacter::LaunchCharacter(FVector(0, 0, 
+		m_fJumpHeight), false, true);
 		m_iJumpCounter++;
 	}
 }
@@ -375,14 +370,6 @@ void APlayerCharacter::setUpStimulus()
 	stimulus = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimulus"));
 	stimulus->RegisterForSense(TSubclassOf<UAISense_Sight>());
 	stimulus->RegisterWithPerceptionSystem();
-}
-
-void APlayerCharacter::OnAbility1()
-{
-	UGameplayStatics::SetGlobalTimeDilation(GetWorld(), 0.25);
-
-	GetActorTimeDilation();
-
 }
 
 void APlayerCharacter::OnAbility2Used()

@@ -19,6 +19,7 @@
 
 AAI_Controller::AAI_Controller(FObjectInitializer const& object_initialiazer)
 {
+	//Initialize behavior tree and blackboard
 	static ConstructorHelpers::FObjectFinder<UBehaviorTree> obj(TEXT("BehaviorTree'/Game/AI/BP_BT.BP_BT'"));
 	if (obj.Succeeded())
 	{
@@ -33,38 +34,25 @@ AAI_Controller::AAI_Controller(FObjectInitializer const& object_initialiazer)
 
 void AAI_Controller::BeginPlay()
 {
+
 	Super::BeginPlay();
+
+	//Run Tree
 	RunBehaviorTree(Behaviortree);
 	BehaviortreeComponent->StartTree(*Behaviortree);
 
-	//APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-
-	//GetBlackboardComponent()->SetValueAsVector(TEXT("PlayerLocation"), PlayerPawn->GetActorLocation());
-	//SetFocus(PlayerPawn);
 }
 
 void AAI_Controller::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	/*APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-
-	if (LineOfSightTo(PlayerPawn))
-	{
-		GetBlackboardComponent()->SetValueAsBool(TEXT("CanSeePlayer"), true);
-		SetFocus(PlayerPawn);
-	}
-	else
-	{
-		GetBlackboardComponent()->SetValueAsBool(TEXT("CanSeePlayer"), false);
-		ClearFocus(EAIFocusPriority::Gameplay);
-	}*/
 }
 
 void AAI_Controller::OnPossess(APawn* const pawn)
 {
 	Super::OnPossess(pawn);
 
+	//Initializse blackboard onposses
 	if (BlacboardComponent)
 	{
 		BlacboardComponent->InitializeBlackboard(*Behaviortree->BlackboardAsset);
@@ -76,13 +64,9 @@ UBlackboardComponent* AAI_Controller::getBlackboard() const
 	return BlacboardComponent;
 }
 
-void AAI_Controller::onUpdated(TArray<AActor*> const& updated_actors)
-{
-
-}
-
 void AAI_Controller::OnTargetDetected(AActor* actor, FAIStimulus const stimulus)
 {
+	//if player detected
 	if (auto const ch = Cast<APlayerCharacter>(actor))
 	{
 		getBlackboard()->SetValueAsBool(bb_keys::can_see_player, stimulus.WasSuccessfullySensed());

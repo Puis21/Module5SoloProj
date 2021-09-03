@@ -5,7 +5,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "Components/TimelineComponent.h"
 #include "AI_Character.generated.h"
 
 class APlayerCharacter;

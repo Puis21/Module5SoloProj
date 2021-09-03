@@ -52,16 +52,20 @@ public:
 
 	void SetMovementState(EMovementState& eNewMovementState);
 
+	//OnEnterMovementState
 	void OnMovementStateChange(EMovementState& eNewMovementState);
 
+	//SwitchMovementState
 	void SwitchMovementState(EMovementState& eNewMovementState);
 
+	//InitiateMovementStateSwitch
 	void StartMovementStateSwitch(EMovementState eNewMovementState);
 
 	bool CanSprint() const;
 
 	bool CanStand() const;
 
+	//check collision
 	bool CheckCapsuleCollision(FVector Center, float HalfHeight, float Radius, bool DrawDebug)const;
 
 	EMovementState GetMovementState() const;
@@ -70,15 +74,12 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	//Timeline for crouching
 	FTimeline m_CrouchingTimeline;
 
-	FTimeline m_CameraTiltTimeline;
-
+	//Curve float for crouch
 	UPROPERTY(EditAnywhere, Category = "Timeline | Capsule Scale Down")
 		UCurveFloat* m_pCapsuleHalfHeightCurve;
-
-	UPROPERTY(EditAnywhere, Category = "Slide | Sliding Camera Tilt")
-		UCurveFloat* m_pCameraTiltCurve;
 
 public:
 

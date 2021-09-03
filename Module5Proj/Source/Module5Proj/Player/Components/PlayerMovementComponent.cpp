@@ -20,7 +20,7 @@ UPlayerMovementComponent::UPlayerMovementComponent()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	m_fSprindSpeed = 1000.f;
-	m_fCrouchSpeed = 300.f;
+	m_fCrouchSpeed = 600.f;
 
 	AirControl = 0.25f;
 	AirControlBoostMultiplier = 2;
@@ -81,13 +81,13 @@ void UPlayerMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 		ResolveMovement();
 	}
 
-	const TEnumAsByte<EMovementState> SurfaceEnum = eMovementState;
-	FString EnumAsString = UEnum::GetValueAsString(SurfaceEnum.GetValue());
+	//const TEnumAsByte<EMovementState> SurfaceEnum = eMovementState;
+	//FString EnumAsString = UEnum::GetValueAsString(SurfaceEnum.GetValue());
 
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Cyan, FString::SanitizeFloat(MaxWalkSpeed));
-		GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Red, EnumAsString);
+		//GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Cyan, FString::SanitizeFloat(MaxWalkSpeed));
+		//GEngine->AddOnScreenDebugMessage(-1, GetWorld()->GetDeltaSeconds(), FColor::Red, EnumAsString);
 		//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Black, FString::Printf(TEXT("Bool: %s"), m_pPlayerCharacter->GetPressedSprint() ? TEXT("true") : TEXT("false")));
 
 	}
@@ -128,10 +128,10 @@ void UPlayerMovementComponent::Crouching()
 	{
 		m_CrouchingTimeline.Play();
 		//bisCrouching = true;
-		if (GEngine)
+	/*	if (GEngine)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 1.5f, FColor::Yellow, TEXT("Began Crouch"));
-		}
+		}*/
 	}
 }
 
@@ -141,10 +141,10 @@ void UPlayerMovementComponent::UnCrouching()
 	{
 		m_CrouchingTimeline.Reverse();
 		bisCrouching = false;
-		if (GEngine)
+	/*	if (GEngine)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 1.5f, FColor::Yellow, TEXT("Stopped Crouch"));
-		}
+		}*/
 	}
 }
 
@@ -178,7 +178,7 @@ void UPlayerMovementComponent::ResolveMovement()
 
 }
 
-void UPlayerMovementComponent::StartMovementStateSwitch(EMovementState eNewMovementState) //InitiateMovementStateSwitch
+void UPlayerMovementComponent::StartMovementStateSwitch(EMovementState eNewMovementState) 
 {
 	if (eNewMovementState != eMovementState)
 	{
@@ -186,13 +186,13 @@ void UPlayerMovementComponent::StartMovementStateSwitch(EMovementState eNewMovem
 	}
 }
 
-void UPlayerMovementComponent::SwitchMovementState(EMovementState& eNewMovementState) //SwitchMovementState
+void UPlayerMovementComponent::SwitchMovementState(EMovementState& eNewMovementState) 
 {
 	SetMovementState(eNewMovementState);
 	eMovementState = eNewMovementState;
 }
 
-void UPlayerMovementComponent::SetMovementState(EMovementState& eNewMovementState) //OnEnterMovementState
+void UPlayerMovementComponent::SetMovementState(EMovementState& eNewMovementState) 
 {
 	switch (eNewMovementState)
 	{

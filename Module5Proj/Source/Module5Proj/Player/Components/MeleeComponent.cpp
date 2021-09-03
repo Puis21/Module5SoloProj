@@ -15,24 +15,13 @@ UMeleeComponent::UMeleeComponent()
 	// ...
 }
 
-
-// Called when the game starts
 void UMeleeComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
 	m_ACPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
-
 }
 
-
-// Called every frame
-void UMeleeComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
-}
 
 void UMeleeComponent::ActivateCollision()
 {

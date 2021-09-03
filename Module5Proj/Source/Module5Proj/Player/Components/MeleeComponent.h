@@ -17,16 +17,10 @@ public:
 	// Sets default values for this component's properties
 	UMeleeComponent();
 
-	UPROPERTY()
-		APlayerCharacter* m_ACPlayerCharacter;
-
-protected:
-	// Called when the game starts
 	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	UPROPERTY()
+		APlayerCharacter* m_ACPlayerCharacter;
 
 	UFUNCTION(BlueprintCallable)
 		void ActivateCollision();

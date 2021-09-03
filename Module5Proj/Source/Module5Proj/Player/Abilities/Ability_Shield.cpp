@@ -61,7 +61,8 @@ void UAbility_Shield::AbilityUsed()
 
 		FVector const ForwardVec = m_ACPlayerCharacter->GetActorLocation();
 		FRotator const Rotation = m_ACPlayerCharacter->GetActorRotation();
-        m_pShieldParticleComponent = UGameplayStatics::SpawnEmitterAttached(m_pShieldParticleSystem, m_ACPlayerCharacter->GetMesh1P(), FName("ShieldSocket"), ForwardVec,
+        m_pShieldParticleComponent = UGameplayStatics::SpawnEmitterAttached(m_pShieldParticleSystem, 
+        m_ACPlayerCharacter->GetMesh1P(), FName("ShieldSocket"), ForwardVec,
         Rotation, FVector(1.f, 1.f, 1.f), EAttachLocation::KeepWorldPosition, true);
     }
 }

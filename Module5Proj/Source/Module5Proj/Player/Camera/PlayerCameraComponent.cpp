@@ -5,7 +5,6 @@
 #include "Components/TimelineComponent.h"
 #include "Module5Proj/Player/PlayerCharacter.h"
 #include "Module5Proj/Player/Components/PlayerMovementComponent.h"
-#include "Kismet/KismetMathLibrary.h"
 
 UPlayerCameraComponent::UPlayerCameraComponent()
 {
@@ -25,17 +24,8 @@ void UPlayerCameraComponent::BeginPlay()
 	if(OwnerCharacter)
 	{
 		m_pAPlayerCharacter = Cast<APlayerCharacter>(GetOwner());
-		if(m_pAPlayerCharacter)
-		{
-			UPlayerMovementComponent* OwnerMovementComponent = m_pAPlayerCharacter->GetPlayerMovementComponent();
-			if(OwnerMovementComponent)
-			{
-				m_pPlayerMovementComponent = OwnerMovementComponent;
-			}
-		}
 	}
 
-	
 
 	if(m_pCameraFOVCurve)
 	{

@@ -86,8 +86,8 @@ void AProximityDoor::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AA
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr))
 	{
 		//Destroy();
-		UGameplayStatics::PlaySound2D(GetWorld(), VoiceSound, 2.f, 1.f);
-		GetWorld()->GetTimerManager().SetTimer(TimerVoice, this, &AProximityDoor::SetBool, m_fTimerDelay, true);
+		UGameplayStatics::PlaySound2D(GetWorld(), VoiceSound, 1.f, 1.f);
+		GetWorld()->GetTimerManager().SetTimer(TimerVoice, this, &AProximityDoor::SetBool, m_fTimerDelay, false);
 		BoxCollision->SetCollisionResponseToAllChannels(ECR_Ignore);
 	}
 }
